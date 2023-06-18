@@ -13,24 +13,27 @@
     <h1 class="heading">
         <img class="logo" src="assets/images/arrows-rotate.png" alt="logo"> KONNECT
     </h1>
-    <div class="start-page">
+    <div class="start">
         <h2>Welcome to Konnect!</h2>
         <div>
             <p><img class="rules" src="assets/images/rules.png" alt="rules">The rules are very simple:</p>
             <ol>
-                <li>Rule 1</li>
-                <li>Rule 2</li>
-                <li>Rule 3</li>
-                <li>Rule 4</li>
-                <li>Rule 5</li>
+                <li>Please enter your name in the box.</li>
+                <li>Click the Start Game button.</li>
+                <li>This will bring to the main game.</li>
+                <li>Enter your five letter word guess in the box and then click with the enter button.</li>
+                <li>Once Clicked the game timer starts. You have alotted time to complete the game before timer runs out.</li>
+                <li>Once entered it then checks you word against the game word and return either three responses with different colours</li>
+                <li>The <span id="green">"Green!"</span> colour refers to the right position in the box.</li>
+                <li>The <span id="orange">"Orange!"</span> colour refers to the right letter in the wrong position in the box.</li>
+                <li>The <span id="red">"Red!"</span> colour refers to the letter is not part of the game.</li>
+                <li>The game is get the word before time runs in the fast time.</li>
+                <li>You time with be show at the end of the game, if you complete the task in time.</li>
+                <li>Good Luck!</li>
             </ol>
         </div>
-        <form>
-            <h4>Enter your name:</h4>
-            <input type="text">
-        </form>
-
-        <button>Start</button>
+        <label id="name">Enter your name:<input type="text"></label>
+        <button data-type="start" class="btn btn--gray">Start Game</button>
     </div>
 
     <div class="main">
@@ -41,17 +44,12 @@
             <input type="text">
             <input type="text">
         </form>
-        <form>
-            <h4>Timer:</h4>
-            <input type="text">
-        </form>
-        <img class="konnect" src="assets/images/konnect.jpg" alt="konnect">
 
-        <form>
-            <h4>Enter your guess here!:</h4>
-            <input type="text">
-        </form>
-        <button>Submit</button>
+        <label>Timer:<input id="timer" type=""></label>
+        <img class="konnect" src="assets/images/konnect.jpg" alt="konnect">
+        <label>Enter your guess here!:<input id="enter-box" type="text"></label>
+        </br>
+        <button data-type="submit">Submit</button>
     </div>
 
 
