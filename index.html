@@ -13,43 +13,51 @@
     <h1 class="heading">
         <img class="logo" src="assets/images/arrows-rotate.png" alt="logo"> KONNECT
     </h1>
-    <div class="start">
+    <div class="start" >
         <h2>Welcome to Konnect!</h2>
-        <div>
-            <p><img class="rules" src="assets/images/rules.png" alt="rules">The rules are very simple:</p>
+        <div class="gameRules">          
             <ol>
+                <img class="rules" src="assets/images/rules.png" alt="rules">
                 <li>Please enter your name in the box.</li>
-                <li>Click the Start Game button.</li>
+                <li>Click the Submit button.</li>
                 <li>This will bring to the main game.</li>
                 <li>Enter your five letter word guess in the box and then click with the enter button.</li>
-                <li>Once Clicked the game timer starts. You have alotted time to complete the game before timer runs out.</li>
-                <li>Once entered it then checks you word against the game word and return either three responses with different colours</li>
+                <li>Once Clicked the game timer starts. You have alotted time to complete the game before the time runs
+                    out.</li>
+                <li>Once entered your word, it then goes off to checks it against the computer word and return either
+                    with three
+                    different response colours</li>
                 <li>The <span id="green">"Green!"</span> colour refers to the right position in the box.</li>
-                <li>The <span id="orange">"Orange!"</span> colour refers to the right letter in the wrong position in the box.</li>
+                <li>The <span id="orange">"Orange!"</span> colour refers to the right letter in the wrong position in
+                    the box.</li>
                 <li>The <span id="red">"Red!"</span> colour refers to the letter is not part of the game.</li>
                 <li>The game is get the word before time runs in the fast time.</li>
                 <li>You time with be show at the end of the game, if you complete the task in time.</li>
                 <li>Good Luck!</li>
             </ol>
         </div>
-        <label id="name">Enter your name:<input type="text"></label>
-        <button data-type="start" class="btn btn--gray">Start Game</button>
+        <div class="enterGame">
+            <h2 id="fname">Enter your name:<input type="text" id="name"><button data-type="submit" onclick="enterGame()" class="enterButton">SUBMIT</button></h2>    
+        </div>
     </div>
 
-    <div class="main">
-        <form>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+    <div class="main" >
+        <form id="output-data">
+            <input type="text" alt="output" style="height:80px; width:80px;">
+            <input type="text" alt="output" style="height:80px; width:80px;">
+            <input type="text" alt="output" style="height:80px; width:80px;">
+            <input type="text" alt="output" style="height:80px; width:80px;">
+            <input type="text" alt="output" style="height:80px; width:80px;">
         </form>
+        <div class="timer">
+            <label>TIMER: <input id="timer-input" type="time" style="height:40px; width:120px;"></label>
+        </div>
+        <div>
+            <label class="enter">Enter your guess below:</label><br>
+            <input id="enter-box" type="text">
+        </div>
+        <button data-type="submit" class="answer-button">SUBMIT </button>
 
-        <label>Timer:<input id="timer" type=""></label>
-        <img class="konnect" src="assets/images/konnect.jpg" alt="konnect">
-        <label>Enter your guess here!:<input id="enter-box" type="text"></label>
-        </br>
-        <button data-type="submit">Submit</button>
     </div>
 
 
