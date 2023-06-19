@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Konnect</title>
 </head>
@@ -13,9 +16,9 @@
     <h1 class="heading">
         <img class="logo" src="assets/images/arrows-rotate.png" alt="logo"> KONNECT
     </h1>
-    <div class="start" >
+    <div class="start">
         <h2>Welcome to Konnect!</h2>
-        <div class="gameRules">          
+        <div class="gameRules">
             <ol>
                 <img class="rules" src="assets/images/rules.png" alt="rules">
                 <li>Please enter your name in the box.</li>
@@ -37,17 +40,19 @@
             </ol>
         </div>
         <div class="enterGame">
-            <h2 id="fname">Enter your name:<input type="text" id="name"><button data-type="submit" onclick="enterGame()" class="enterButton">SUBMIT</button></h2>    
+            <h2 id="fname">Enter your name:<input type="text" id="name">
+                <button data-type="submit" id="enterButton" onclick="enterGame()">SUBMIT</button>
+            </h2>
         </div>
     </div>
 
-    <div class="main" >
+    <div class="main">
         <form id="output-data">
-            <input type="text" alt="output" style="height:80px; width:80px;">
-            <input type="text" alt="output" style="height:80px; width:80px;">
-            <input type="text" alt="output" style="height:80px; width:80px;">
-            <input type="text" alt="output" style="height:80px; width:80px;">
-            <input type="text" alt="output" style="height:80px; width:80px;">
+            <input type="text" alt="output" id="output-box">
+            <input type="text" alt="output" id="output-box">
+            <input type="text" alt="output" id="output-box">
+            <input type="text" alt="output" id="output-box">
+            <input type="text" alt="output" id="output-box">
         </form>
         <div class="timer">
             <label>TIMER: <input id="timer-input" type="time" style="height:40px; width:120px;"></label>
@@ -56,7 +61,7 @@
             <label class="enter">Enter your guess below:</label><br>
             <input id="enter-box" type="text">
         </div>
-        <button data-type="submit" class="answer-button">SUBMIT </button>
+        <button data-type="submit" class="answer-button" onclick="myFunction()">SUBMIT </button>
 
     </div>
 
