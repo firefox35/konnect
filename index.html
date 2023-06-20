@@ -41,7 +41,7 @@
         </div>
         <div class="enterGame">
             <h2 id="fname">Enter your name:<input type="text" id="name">
-                <button data-type="submit" id="enterButton" onclick="enterGame()">SUBMIT</button>
+                <button data-type="submit" id="enterButton" onclick="enterGame(); storeInfo()">SUBMIT</button>
             </h2>
         </div>
     </div>
@@ -55,10 +55,10 @@
             <input type="text" alt="output" id="output-box">
         </form>
         <div class="timer">
-            <label>TIMER: <input id="timer-input" type="time" style="height:40px; width:120px;"></label>
+            <label>TIMER: <input id="timer-input" type="time" style="height:20px; width:120px;"></label>
         </div>
         <div>
-            <label class="enter">Enter your guess below:</label><br>
+            <label id="enter">Enter your guess below:</label><br>
             <input id="enter-box" type="text">
         </div>
         <button data-type="submit" class="answer-button" onclick="myFunction()">SUBMIT </button>

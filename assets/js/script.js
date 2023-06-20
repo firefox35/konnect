@@ -15,7 +15,43 @@ function enterGame(){
     }
 }
 
+function storeInfo(){
+    let name = document.getElementById("name").value;
+    //Store Data Locally
+    let info = localStorage.setItem("name", name);
+}
 
+function startGame(){
+
+}
+
+function timer(){
+
+}
+
+function game(){
+
+}
+
+function inputGuess(){
+
+}
+
+function checkGuess() {
+
+}
+
+function returnResult(){
+
+}
+
+function displayLeaderboard(){
+
+}
+
+function endGame(){
+
+}
 
 
 
