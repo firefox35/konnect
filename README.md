@@ -3,7 +3,7 @@
 Konnect is a word game where the computer selects a random word and you have to guess the word in the least amount of the time. If you get a letter right in the right position of your guess it will turn green, orange shows the letter is right but in the wrong position and red show the letter doesn't belong in the game. 
 
 
-![Mockups] (assets/images/all-devices-back.png)
+![Mockups] (assets/images/devices.png)
 
 ## Features
 
