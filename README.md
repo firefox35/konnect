@@ -1,39 +1,183 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Konnect
 
-Welcome,
+Konnect is a word game where the computer selects a random word and you have to guess the word in the least amount of the time. If you get a letter right in the right position of your guess it will turn green, orange shows the letter is right but in the wrong position and red show the letter doesn't belong in the game. 
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+![Mockups] (assets/images/all-devices-back.png)
 
-## Codeanywhere Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Site Wide
 
-`python3 -m http.server`
+Navigation Menu
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Footer
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+404 Error
 
-`http_server`
+### About Screen
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Main Game Screen
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Design
 
-To log into the Heroku toolbelt CLI:
+Wireframes - Unizard.io
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* About Screen
+![About Screen](assets/images/screen1.jpeg)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Main Game Screen
+![About Screen](assets/images/screen2.jpeg)
+![About Screen](assets/images/screen3.jpeg)
+![About Screen](assets/images/screen4.jpeg)
+![About Screen](assets/images/screen5.jpeg)
 
----
+## Technologies
 
-Happy coding!
+HTML
+* Hypertext Markup Language is the main language to create the structure of the website.
+
+CSS
+* Cascading Style Sheets is used to style your content in an external file.
+
+JavaScript
+* Object Oriented programming language that interacts with the web browser.
+
+Github
+* This is used to create and store your source code as a backup if you lose your application.
+* <https://github.com/firefox35/konnect> 
+
+Git
+* Git is the language used to submit your source code to the repository.
+
+CodeAnyWhere
+* Is the application where you create your website in file structures.
+
+Uizard.io
+* This application was used to create mockups for the konnect website.
+* <https://app.uizard.io>
+* <https://app.uizard.io/prototypes/bMqxdZoEyxTYJrG9RKqP>
+
+Website Mockup Generator
+* This application was used to create images of the konnect website in desktop, laptop, tablet and mobile devices.
+* <https://websitemockupgenerator.com>
+
+Resize images
+*
+*
+
+Suppressed Images
+*
+*
+
+Navigation 
+*
+
+## Testing
+
+Responsiveness
+
+Steps to test:
+1.
+2.
+3.
+4.
+5.
+
+Expected:
+
+
+Result:
+
+
+Accessibility
+
+
+
+### Lighthouse Testing
+
+About & Main Screen
+
+
+Functional Testing
+
+
+Navigation
+
+|     Navigation   |  Page to Load  |
+|------------------|----------------|
+|   About Screen   |  index.html    |
+|   Main  Screen   |  index.html    |
+
+ * Game Testing
+
+ Test 1
+
+ Steps to Test:
+ Expected:
+ Result:
+
+ Test 2
+
+ Steps to Test:
+ Expected:
+ Result:
+
+ Test 3
+
+ Steps to Test:
+ Expected:
+ Result:
+
+ Test 4
+
+ Steps to Test:
+ Expected:
+ Result:
+
+ Test 5
+
+ Steps to Test:
+ Expected:
+ Result:
+
+ Test 6
+
+ Steps to Test:
+ Expected:
+ Result:
+
+ Test 7
+
+ Steps to Test:
+ Expected:
+ Result:
+
+ Test 8
+
+ Steps to Test:
+ Expected:
+ Result:
+
+  * Header Icons/Links
+
+  Validation Testing
+* HTML
+* CSS
+* JAVASCRIPT
+
+  Unfixed Bugs
+
+  ## Deployment
+  Version Control
+
+  Deployment of Live Version from Github
+
+  The live link can be found here -
+
+  Clone the Repository Code Locally
+
+  Credits
+  * Links to Images and Content used in the game
+

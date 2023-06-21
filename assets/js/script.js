@@ -46,7 +46,7 @@ function returnResult(){
 }
 
 function displayLeaderboard(){
-
+   
 }
 
 function endGame(){
