@@ -95,13 +95,13 @@ body {
 .main {
     background-color: #E6ECF0;
     box-sizing: border-box;
-    width: 45%;
+    width: 40%;
     height: 80vh;
-    background-image: url("../images/stickman.jpg");
+    background-image: url("../images/stickman2.jpg");
     background-repeat: no-repeat;
-    background-size: 610px 520px;
-    margin-left: 28%;
-    margin-right: 20%;   
+    background-size: 100% auto;
+    margin-left: 30%;
+    margin-right: 20%;
     padding: 2px;
     display: none;
 }
@@ -118,10 +118,10 @@ body {
 #output-box {
     border: solid 2px red;
     background-color: ghostwhite;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
 }
 
 
@@ -143,16 +143,16 @@ body {
 #enter {
     font-size: 25px;
     margin-top: 80px;
-    margin-left: 28%; 
+    margin-left: 28%;
     font-weight: bold;
 
 }
 
 #enter-box {
     margin-left: 28%;
-    height: 50px;
+    height: 40px;
     width: 252px;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     border: solid 2px red;
 }
@@ -162,14 +162,140 @@ body {
     margin-bottom: 25px;
     margin-top: 30px;
     width: 180px;
-    height: 50px;
+    height: 40px;
     font-weight: bold;
     font-size: 25px;
     border: solid 2px black;
 }
 
 /* --------- Media queries */
+@media (max-width: 1216px) {
+    .main {
+        width: 40%;
+        height: 50vh;
+        background-size: 100% 580px;
+        margin-left: 30%;
+        margin-right: 20%;
+        padding: 2px;
+        display: none;
+    }
+}
 
+@media (max-width: 950px) {
+    .main {
+        width: 44%;
+        height: 42vh;
+        background-size: 410px 590px;
+        margin-left: 30%;
+        margin-right: 20%;
+        padding: 2px;
+        display: none;
+    }
+}
+
+@media (max-width: 877px) {
+    * {
+        border: solid 2px red;
+    }
+
+    .main {
+        width: 50%;
+        height: 52vh;
+        margin-left: 22%;
+        margin-right: 10px;
+        background-size: 440px 600px;
+    }
+
+    #enter {
+        margin-left: 100px;
+    }
+
+    #enterbox {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 820px) {
+    * {
+        border: solid 2px red;
+    }
+
+    .main {
+        width: 55%;
+        height: 60vh;
+        margin-left: 22%;
+        margin-right: 10px;
+        background-size: 420px 610px;
+    }
+
+    #output-box {
+        width: 35px;
+
+        height: 35px;
+        gap: 2px;
+    }
+
+    #enter {
+        margin-left: 100px;
+        margin-bottom: 2px;
+    }
+
+    #enterbox {
+        width: 80px;
+        margin-left: 100px;
+    }
+}
+@media (max-width: 877px) {
+    * {
+        border: solid 2px red;
+    }
+
+    .main {
+        width: 50%;
+        height: 52vh;
+        margin-left: 22%;
+        margin-right: 10px;
+        background-size: 440px 600px;
+    }
+
+    #enter {
+        margin-left: 100px;
+    }
+
+    #enterbox {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 620px) {
+    * {
+        border: solid 2px red;
+    }
+
+    .main {
+        width: 65%;
+        height: 80vh;
+        margin-left: 18%;
+        margin-right: 10px;
+        background-size: 350px 540px;
+    }
+
+    #output-box {
+        width: 35px;
+        height: 35px;
+        gap: 2px;
+    }
+
+    #enter {
+        margin-left: 100px;
+        margin-bottom: 2px;
+    }
+
+    #enterbox {
+        width: 60px;
+        margin-left: 20px;
+    }
+}
 @media (max-width: 414px) {
     * {
         border: solid 2px red;
@@ -188,9 +314,9 @@ body {
 
     .start {
         width: 95%;
-        height: 135vh;
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 80vh;
+        margin-left: 5px;
+        margin-right: 5px;
         margin-bottom: 20px;
         padding-left: 5px;
 
@@ -222,11 +348,11 @@ body {
 
     .main {
         width: 95%;
-        height: 82vh;
-        background-size: 370px 500px;
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 62vh;
+        background-size: 380px 560px;
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
         padding: 2px;
         display: none;
     }
@@ -261,12 +387,13 @@ body {
         font-size: 14px;
         margin-top: 80px;
         margin-left: 28%;
-        margin-bottom: 5px;
+        margin-bottom: 1px;
         font-weight: bold;
 
     }
 
     #enter-box {
+        margin-bottom: 30px;
         margin-left: 27%;
         height: 30px;
         width: 150px;
@@ -277,8 +404,8 @@ body {
 
     .answer-button {
         margin-left: 30%;
-        margin-bottom: 10px;
-        margin-top: 60px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         width: 130px;
         height: 40px;
         font-size: 25px;

@@ -1,39 +1,41 @@
-let main = document.querySelector('.main'); 
+let main = document.querySelector('.main');
 let start = document.querySelector('.start');
 let isSubmitted = true;
 
 
-function enterGame(){
-    if (isSubmitted){
+function enterGame() {
+    if (isSubmitted) {
         main.style.display = 'block';
         start.style.display = 'none';
         isSubmitted = false;
-    }else{
+    } else {
         main.style.display = 'none';
         start.style.display = 'block';
-        isSubmitted = true;     
+        isSubmitted = true;
     }
 }
 
-function storeInfo(){
+function storeInfo() {
     let name = document.getElementById("name").value;
     //Store Data Locally
-    let info = localStorage.setItem("name", name);
+    name.localStorage.setItem("name", name);
 }
 
-function startGame(){
 
-}
-
-function timer(){
+function timer() {
 
 }
 
-function game(){
+
+function startGame() {
 
 }
 
-function inputGuess(){
+function game() {
+
+}
+
+function inputGuess() {
 
 }
 
@@ -41,15 +43,15 @@ function checkGuess() {
 
 }
 
-function returnResult(){
+function returnResult() {
 
 }
 
-function displayLeaderboard(){
-   
+function displayLeaderboard() {
+
 }
 
-function endGame(){
+function endGame() {
 
 }
 

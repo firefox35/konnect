@@ -41,24 +41,24 @@
         </div>
         <div class="enterGame">
             <h2 id="fname">Enter your name:<input type="text" id="name">
-                <button data-type="submit" id="enterButton" onclick="enterGame(); storeInfo()">SUBMIT</button>
+                <button data-type="submit" id="enterButton" onclick="enterGame();storeInfo()">SUBMIT</button>
             </h2>
         </div>
     </div>
 
     <div class="main">
         <form id="output-data">
-            <input type="text" alt="output" id="output-box">
-            <input type="text" alt="output" id="output-box">
-            <input type="text" alt="output" id="output-box">
-            <input type="text" alt="output" id="output-box">
-            <input type="text" alt="output" id="output-box">
+            <input type="text" alt="output" id="output-box" autocomplete="char1">
+            <input type="text" alt="output" id="output-box" autocomplete="char2">
+            <input type="text" alt="output" id="output-box" autocomplete="char3">
+            <input type="text" alt="output" id="output-box" autocomplete="char4">
+            <input type="text" alt="output" id="output-box" autocomplete="char5">
         </form>
         <div class="timer">
             <label>TIMER: <input id="timer-input" type="time" style="height:20px; width:120px;"></label>
         </div>
         <div>
-            <label id="enter">Enter your guess below:</label><br>
+            <h2 id="enter">Enter your guess below:</h2><br>
             <input id="enter-box" type="text">
         </div>
         <button data-type="submit" class="answer-button" onclick="myFunction()">SUBMIT </button>
