@@ -148,9 +148,10 @@ body {
 
 }
 
-#enter-box {
-    margin-left: 28%;
-    height: 40px;
+#enterBox {
+    margin-left: 18%;
+    margin-right: 18%;
+    height: 60px;
     width: 252px;
     font-size: 30px;
     text-align: center;
@@ -210,7 +211,7 @@ body {
         margin-left: 100px;
     }
 
-    #enterbox {
+    #enterBox {
         margin-left: 100px;
     }
 }
@@ -240,11 +241,12 @@ body {
         margin-bottom: 2px;
     }
 
-    #enterbox {
+    #enterBox {
         width: 80px;
         margin-left: 100px;
     }
 }
+
 @media (max-width: 877px) {
     * {
         border: solid 2px red;
@@ -262,7 +264,7 @@ body {
         margin-left: 100px;
     }
 
-    #enterbox {
+    #enterBox {
         margin-left: 100px;
     }
 }
@@ -291,11 +293,12 @@ body {
         margin-bottom: 2px;
     }
 
-    #enterbox {
+    #enterBox {
         width: 60px;
         margin-left: 20px;
     }
 }
+
 @media (max-width: 414px) {
     * {
         border: solid 2px red;
@@ -392,7 +395,7 @@ body {
 
     }
 
-    #enter-box {
+    #enterBox {
         margin-bottom: 30px;
         margin-left: 27%;
         height: 30px;
@@ -522,7 +525,7 @@ body {
 
     }
 
-    #enter-box {
+    #enterBox {
         margin-left: 20%;
         height: 30px;
         width: 180px;
