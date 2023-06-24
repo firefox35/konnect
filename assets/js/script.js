@@ -18,7 +18,7 @@ function enterGame() {
 function storeInfo() {
     let name = document.getElementById("name").value;
     //Store Data Locally
-    name.localStorage.setItem("name", name);
+    let fname = localStorage.setItem("name", name);
 }
 
 
@@ -31,10 +31,12 @@ function timer() {
 
 
 
-function startGame() {
+function game() {
     //Setting an Array of Words
     let array = ["brown", "truck", "train"];
-    let guess = inputGuess();
+    //Input guess from user
+    let guess = document.getElementById('enterBox').value.toLowerCase();
+    
     //Choosing a Random word from the Array
     let word = array[Math.floor(Math.random() * array.length)];
 
@@ -61,19 +63,11 @@ function startGame() {
 
 }
 
-startGame();
+game();
 
-function game() {
 
-}
 
-function inputGuess() {
-    let userGuess;
-    userGuess = document.getElementById('enterBox').value = "";
-    document.getElementsByName('guess').innerHTML = (userGuess);
-    alert(userGuess);
 
-}
 
 function checkGuess() {
 
@@ -84,7 +78,7 @@ function returnResult() {
 }
 
 function displayLeaderboard() {
-
+    let name = document.getElementById("name").value;
 }
 
 function endGame() {
