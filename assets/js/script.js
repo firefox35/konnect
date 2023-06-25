@@ -53,47 +53,40 @@ function game() {
     console.log(word);
     console.log(guess);
     //Split the Array in Seperate Letters
-    let char = word.split('');
+    let letters = word.split('');
     let checkGuess = guess.split('');
+    let result = guess.localeCompare(word);
 
-    let fword = char.slice(0, 5);
-    let word2 = checkGuess.slice(0, 5);
-    console.log(fword);
-    console.log(word2);
+    console.log(letters[2]);
+    console.log(checkGuess[3]);
+    console.log(result);
 
-    console.log(fword === word2);
-
-    for (let i = 0; i < fword.length; i++) {
-        if (fword[i] === word2[i]) {
-            console.log(fword === word2);
+    for (let i = 0; i < checkGuess.length; i++) {
+        let guessResult = checkGuess[i];
+        let ansResult = letters[i];
+        let result = letters[i].localeCompare(checkGuess[i])
+        if (guessResult[0] === ansResult) {
+            result.toString().fontcolor("Green");
+            console.log(result);
             //let color = green;
             //return color.toString(green);
-        } else if (fword[i] === !word2[i]) {
-            let color2 = orange;
-            return color2.toString(orange);
+        } else if (letters.indexOf(checkGuess) != -1) {
+            result.toString().fontcolor("Orange");
+            console.log(result);
+            //let color2 = orange;
+            //return color2.toString(orange);
         } else {
-            let color3 = red;
-            return color3.toString(red);
+            result.toString().fontcolor("Red");
+            console.log(result);
+            //ansResult.push("Red");
+
+            //let color3 = red;
+            // return color3.toString(red);
 
         }
 
-        console.log(char);
+
     }
-
-    let result = char.toLocaleString() === checkGuess.toLocaleString();
-    if (result) {
-        console.log((char).style.color = "green");
-    } else {
-        console.log('Its wrong');
-    }
-
-
-    console.log(char);
-    console.log(checkGuess);
-
-
-
-
 
 }
 
@@ -106,7 +99,7 @@ game();
 function checkGuess() {
 
 }
- 
+
 
 
 function displayLeaderboard() {

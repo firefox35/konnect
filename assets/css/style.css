@@ -88,6 +88,7 @@ body {
     height: 32px;
     font-size: 15px;
     font-weight: bold;
+    border-radius: 30px;
 }
 
 
@@ -168,6 +169,7 @@ body {
     font-weight: bold;
     font-size: 25px;
     border: solid 2px black;
+    border-radius: 30px;
 }
 
 /* --------- Media queries */
@@ -222,6 +224,11 @@ body {
         border: solid 2px red;
     }
 
+    #enterButton {
+        height: 40px;
+        margin-top: 10px;
+    }
+
     .main {
         width: 55%;
         height: 60vh;
@@ -232,19 +239,43 @@ body {
 
     #output-box {
         width: 35px;
-
         height: 35px;
         gap: 2px;
     }
 
+    .box1 {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-left: -60px;
+        padding-right: 10px;
+    }
+
     #enter {
-        margin-left: 100px;
+        margin-right: 80px;
+        margin-left: 20px;
+        margin-top: 80px;
         margin-bottom: 2px;
+        font-size: 20px;
+        padding-left: 10px;
     }
 
     #enterBox {
-        width: 80px;
-        margin-left: 100px;
+        width: 150px;
+        height: 50px;
+        margin-left: 5px;
+        margin-right: 80px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+
+    .ansBtn {
+        margin-left: 30%;
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
     }
 }
 

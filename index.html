@@ -47,20 +47,25 @@
     </div>
 
     <div class="main">
-        <form id="output-data">
+        <div id="output-data">
+            <div class="outputBx" id="1"></div>
+            <div class="outputBx" id="1"></div>
+            <div class="outputBx" id="1"></div>
+            <div class="outputBx" id="1"></div>
+            <div class="outputBx" id="1"></div>
             <input type="text" alt="output" id="outputBx" autocomplete="char1" maxlength="1">
             <input type="text" alt="output" id="outputBx" autocomplete="char2" maxlength="1">
             <input type="text" alt="output" id="outputBx" autocomplete="char3" maxlength="1">
             <input type="text" alt="output" id="outputBx" autocomplete="char4" maxlength="1">
             <input type="text" alt="output" id="outputBx" autocomplete="char5" maxlength="1">
-        </form>
+        </div>
         <div class="timer">
             <span id="mins">00:</span>
             <span id="sec">00</span>
             <label>TIMER: <input id="timer-input" type="time" style="height:20px; width:120px;"></label>
         </div>
-        <div>
-            <h2 id="enter">Enter your guess below:</h2><br>
+        <div class="box1">
+            <h2 id="enter">Enter your guess below:</h2>
             <input id="enterBox" type="text" maxlength="5">
         </div>
         <button data-type="submit" class="ansBtn" onclick="enterGuess(); game()">SUBMIT </button>
