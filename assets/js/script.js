@@ -56,34 +56,46 @@ function game() {
     let letters = word.split('');
     let checkGuess = guess.split('');
     let result = guess.localeCompare(word);
-
-    console.log(letters[2]);
-    console.log(checkGuess[3]);
-    console.log(result);
+    let colorG = document.querySelector("#clr1");
+    let colorO = document.querySelector(".clr2");
+    let colorR = document.querySelector(".clr3");
+    //console.log(letters);
+    //console.log(checkGuess);
+    ///console.log(result);
 
     for (let i = 0; i < checkGuess.length; i++) {
         let guessResult = checkGuess[i];
-        let ansResult = letters[i];
-        let result = letters[i].localeCompare(checkGuess[i])
-        if (guessResult[0] === ansResult) {
-            result.toString().fontcolor("Green");
-            console.log(result);
+        let randWord = letters[i];
+       
+        //let result = letters[i].localeCompare(checkGuess[i]);
+        if (randWord.match(guessResult)) {
+            guessResult.colorG = "green";
+            console.log(guessResult);
+        } else if (randWord.includes(guessResult)){
+            guessResult.colorO;
+            console.log(guessResult);
+        } else {
+            console.log(guessResult.fontcolor = "Red");
+        }
+            //let result = letters[i].localeCompare(checkGuess[i]).push=('green');
+           // console.log(result.toString(checkGuess[i]));
+            //guessResult[0] === randWord[i]
             //let color = green;
-            //return color.toString(green);
-        } else if (letters.indexOf(checkGuess) != -1) {
-            result.toString().fontcolor("Orange");
-            console.log(result);
+            //} else if (letters[i].indexOf(checkGuess[i]) != -1) {
+            //result.toString("").fontcolor("Orange");
+            //console.log(result);
             //let color2 = orange;
             //return color2.toString(orange);
-        } else {
-            result.toString().fontcolor("Red");
-            console.log(result);
+        //} else {
+            //result.toString().fontcolor("Red");
+           // result.push("Red")
+            //console.log(result);
             //ansResult.push("Red");
 
             //let color3 = red;
             // return color3.toString(red);
 
-        }
+        //}
 
 
     }

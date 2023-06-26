@@ -31,7 +31,17 @@ body {
     padding-left: 2px;
 }
 
+#clr1 {
+    color: green;
+}
 
+.clr2 {
+    color: orange;
+}
+
+.clr3 {
+    color: red;
+}
 
 .start {
     background-color: #E6ECF0;
@@ -91,7 +101,9 @@ body {
     border-radius: 30px;
 }
 
-
+* {
+    border: solid 2px red;
+}
 
 .main {
     background-color: #E6ECF0;
@@ -114,15 +126,15 @@ body {
     gap: 20px;
     padding: 30px;
     font-size: 20px;
-
+    
 }
 
-#outputBx {
+.outputBx #1{
     border: solid 2px red;
     background-color: ghostwhite;
     font-size: 40px;
     text-align: center;
-    height: 50px;
+    height: 60px;
     width: 50px;
 }
 
@@ -151,8 +163,8 @@ body {
 }
 
 #enterBox {
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 70%;
+    margin-right: 5%;
     height: 60px;
     width: 252px;
     font-size: 30px;
@@ -161,7 +173,7 @@ body {
 }
 
 .ansbtn {
-    margin-left: 34%;
+    margin-left: 14%;
     margin-bottom: 25px;
     margin-top: 30px;
     width: 180px;
