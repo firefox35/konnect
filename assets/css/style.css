@@ -48,7 +48,7 @@ body {
     box-sizing: border-box;
     width: 50%;
     height: auto;
-    margin-left: 25%;
+    margin-left: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
     padding: 10px;
@@ -124,18 +124,18 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    padding: 30px;
+    padding: 5px;
     font-size: 20px;
     
 }
 
-.outputBx #1{
+.outputBx {
     border: solid 2px red;
     background-color: ghostwhite;
     font-size: 40px;
     text-align: center;
-    height: 60px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 
@@ -163,8 +163,8 @@ body {
 }
 
 #enterBox {
-    margin-left: 70%;
-    margin-right: 5%;
+    margin-left: 128px;
+    margin-right: 26px;
     height: 60px;
     width: 252px;
     font-size: 30px;
@@ -172,11 +172,11 @@ body {
     border: solid 2px red;
 }
 
-.ansbtn {
-    margin-left: 14%;
+.ansBtn {
+    margin-left: 100px;
     margin-bottom: 25px;
     margin-top: 30px;
-    width: 180px;
+    width: 280px;
     height: 40px;
     font-weight: bold;
     font-size: 25px;
@@ -217,7 +217,7 @@ body {
     .main {
         width: 50%;
         height: 52vh;
-        margin-left: 22%;
+        margin-left: 10px;
         margin-right: 10px;
         background-size: 440px 600px;
     }
@@ -244,7 +244,7 @@ body {
     .main {
         width: 55%;
         height: 60vh;
-        margin-left: 22%;
+        margin-left: 10px;
         margin-right: 10px;
         background-size: 420px 610px;
     }

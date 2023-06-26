@@ -55,62 +55,68 @@ function game() {
     //Split the Array in Seperate Letters
     let letters = word.split('');
     let checkGuess = guess.split('');
-    let result = guess.localeCompare(word);
-    let colorG = document.querySelector("#clr1");
-    let colorO = document.querySelector(".clr2");
-    let colorR = document.querySelector(".clr3");
-    //console.log(letters);
-    //console.log(checkGuess);
-    ///console.log(result);
+    //let result = guess.localeCompare(word);
+    //let colorG = document.querySelector("#clr1");
+    //let colorO = document.querySelector(".clr2");
+    //let colorR = document.querySelector(".clr3");
+    console.log(letters);
+    console.log(checkGuess);
+    //console.log(result);
 
     for (let i = 0; i < checkGuess.length; i++) {
+        let letters = word.split('');
+        let checkGuess = guess.split('');
         let guessResult = checkGuess[i];
         let randWord = letters[i];
-       
+
         //let result = letters[i].localeCompare(checkGuess[i]);
         if (randWord.match(guessResult)) {
-            guessResult.colorG = "green";
-            console.log(guessResult);
-        } else if (randWord.includes(guessResult)){
-            guessResult.colorO;
-            console.log(guessResult);
+            ///guessResult.colorG = "green";
+            document.getElementById('box1').value = guessResult[0];
+            document.getElementById('box2').value = guessResult[1];
+            document.getElementById('box3').value = guessResult[2];
+            document.getElementById('box4').value = guessResult[3];
+            document.getElementById('box5').value = guessResult[4];
+            return guessResult[i];
+            //console.log(guessResult);
+        } else if (randWord.includes(guessResult)) {
+            //guessResult.colorO;
+            document.getElementById('box1').value = guessResult[0];
+            document.getElementById('box2').value = guessResult[1];
+            document.getElementById('box3').value = guessResult[2];
+            document.getElementById('box4').value = guessResult[3];
+            document.getElementById('box5').value = guessResult[4];
+            return guessResult;
+            //console.log(guessResult);
         } else {
-            console.log(guessResult.fontcolor = "Red");
+            document.getElementById('box3').value = guessResult[0];
+            document.getElementById('box2').value = guessResult[1];
+            document.getElementById('box3').value = guessResult[2];
+            document.getElementById('box4').value = guessResult[3];
+            document.getElementById('box5').value = guessResult[4];
+            return guessResult;
+            console.log(guessResult);
         }
-            //let result = letters[i].localeCompare(checkGuess[i]).push=('green');
-           // console.log(result.toString(checkGuess[i]));
-            //guessResult[0] === randWord[i]
-            //let color = green;
-            //} else if (letters[i].indexOf(checkGuess[i]) != -1) {
-            //result.toString("").fontcolor("Orange");
-            //console.log(result);
-            //let color2 = orange;
-            //return color2.toString(orange);
-        //} else {
-            //result.toString().fontcolor("Red");
-           // result.push("Red")
-            //console.log(result);
-            //ansResult.push("Red");
-
-            //let color3 = red;
-            // return color3.toString(red);
-
-        //}
-
-
     }
 
-}
+    //let box1 = document.getElementById('box1');
+    //box1.innerHTML = guessResult[0].value;
+    //let box2 = document.getElementById('box2');
+    //box2.innerHTML = guessResult[1];
+    //let box3 = document.getElementById('box3');
+    //box3.innerHTML = guessResult[2];
+    //let box4 = document.getElementById('box4');
+    //box4.innerHTML = guessResult[3];
+    //let box5 = document.getElementById('box5');
+    //box5.innerHTML = guessResult[4];
 
+}
 game();
 
 
 
+let guessResult;
 
-
-function checkGuess() {
-
-}
 
 
 
@@ -121,7 +127,4 @@ function displayLeaderboard() {
 function endGame() {
 
 }
-
-
-
 
