@@ -31,13 +31,14 @@ function timer() {
 
 
 
-function enterGuess() {
-    let txt = document.getElementById('enterBox');
-    let btn1 = document.getElementsByClassName('ansBtn');
-    let out1 = document.getElementById('output-data');
-    out1.innerHTML = txt.value;
+//function enterGuess() {
+    //let txt = document.getElementById('enterBox');
+    //let btn1 = document.getElementsByClassName('ansBtn');
+    //let out1 = document.getElementById('output-data');
+    //out1.innerHTML = txt.value;
 
-}
+//}
+
 
 
 
@@ -53,64 +54,62 @@ function game() {
     console.log(word);
     console.log(guess);
     //Split the Array in Seperate Letters
-    let letters = word.split('');
-    let checkGuess = guess.split('');
+    //let letters = word.split('');
+    //let checkGuess = guess.split('');
     //let result = guess.localeCompare(word);
     //let colorG = document.querySelector("#clr1");
     //let colorO = document.querySelector(".clr2");
     //let colorR = document.querySelector(".clr3");
-    console.log(letters);
-    console.log(checkGuess);
+    //console.log(letters);
+    ///console.log(checkGuess);
     //console.log(result);
 
-    for (let i = 0; i < checkGuess.length; i++) {
-        let letters = word.split('');
-        let checkGuess = guess.split('');
-        let guessResult = checkGuess[i];
-        let randWord = letters[i];
+    for (let i = 0; i < guess.length; i++) {
+        //let letters = word.split('');
+        //let checkGuess = guess.split('');
+        let guessResult = guess[i];
+        let randWord = word[i];
+        
 
         //let result = letters[i].localeCompare(checkGuess[i]);
         if (randWord.match(guessResult)) {
             ///guessResult.colorG = "green";
-            document.getElementById('box1').value = guessResult[0];
-            document.getElementById('box2').value = guessResult[1];
-            document.getElementById('box3').value = guessResult[2];
-            document.getElementById('box4').value = guessResult[3];
-            document.getElementById('box5').value = guessResult[4];
-            return guessResult[i];
-            //console.log(guessResult);
+            
+            document.getElementById("out1").value = guessResult;
+           // document.getElementsByClassName('out2').innerHTML = guessResult[1].value;
+            //document.getElementsByClassName('out3').innerHTML = guessResult[2].value;
+            //document.getElementsByClassName('out4').innerHTML = guessResult[3].value;
+            //document.getElementsByClassName('out5').innerHTML = guessResult[4].value;
+          
+            return guessResult;
+            console.log(guessResult);
         } else if (randWord.includes(guessResult)) {
             //guessResult.colorO;
-            document.getElementById('box1').value = guessResult[0];
-            document.getElementById('box2').value = guessResult[1];
-            document.getElementById('box3').value = guessResult[2];
-            document.getElementById('box4').value = guessResult[3];
-            document.getElementById('box5').value = guessResult[4];
+     
+            document.getElementById("out1").value = guessResult;
+            //document.getElementsByClassName('out2').innerHTML = guessResult[1].value;
+            //document.getElementsByClassName('out3').innerHTML = guessResult[2].value;
+            //document.getElementsByClassName('out4').innerHTML = guessResult[3].value;
+            //document.getElementsByClassName('out5').innerHTML = guessResult[4].value;
             return guessResult;
-            //console.log(guessResult);
+            console.log(guessResult);
+            
         } else {
-            document.getElementById('box3').value = guessResult[0];
-            document.getElementById('box2').value = guessResult[1];
-            document.getElementById('box3').value = guessResult[2];
-            document.getElementById('box4').value = guessResult[3];
-            document.getElementById('box5').value = guessResult[4];
+          
+            document.getElementById("out1").value = guessResult;
+            //document.getElementsByClassName('out2').innerHTML = guessResult[1].value;
+            //document.getElementsByClassName('out3').innerHTML = guessResult[2].value;
+            //document.getElementsByClassName('out4').innerHTML = guessResult[3].value;
+            //document.getElementsByClassName('out5').innerHTML = guessResult[4].value;
+           //document.getElementsByClassName('out5').value = guessResult.indexOf("", 4);
             return guessResult;
             console.log(guessResult);
         }
+
+        
     }
-
-    //let box1 = document.getElementById('box1');
-    //box1.innerHTML = guessResult[0].value;
-    //let box2 = document.getElementById('box2');
-    //box2.innerHTML = guessResult[1];
-    //let box3 = document.getElementById('box3');
-    //box3.innerHTML = guessResult[2];
-    //let box4 = document.getElementById('box4');
-    //box4.innerHTML = guessResult[3];
-    //let box5 = document.getElementById('box5');
-    //box5.innerHTML = guessResult[4];
-
 }
+    
 game();
 
 
