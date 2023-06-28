@@ -32,15 +32,15 @@ body {
 }
 
 .clr1 {
-    color: green;
+    background: green;
 }
 
 .clr2 {
-    color: orange;
+    background: orange;
 }
 
 .clr3 {
-    color: red;
+    background: red;
 }
 
 .start {

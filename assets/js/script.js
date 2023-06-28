@@ -56,7 +56,7 @@ function game() {
     let randWord = word.split('');
     guess.split('');
     //let result = guess.localeCompare(word);
-    
+
     console.log(randWord);
     //console.log(checkGuess);
     //console.log(result);
@@ -78,23 +78,27 @@ function game() {
         //let result = letters[i].localeCompare(checkGuess[i]);
         if (word.match(checkGuess[i])) {
             //checkGuess[i].style.color = 'green';
-            checkGuess[i] = letterBox.background = "green";
+            checkGuess[i] = letterBox.backround = 'green';
             //return checkGuess;
             console.log(checkGuess[i]);
 
         } else if (word.includes(checkGuess[i])) {
             //checkGuess[i].style.color = "orange";
-            checkGuess[i] = letterBox.background = "orange";
+            checkGuess[i] = letterBox.background = 'orange';
             //return checkGuess;
             console.log(checkGuess[i]);
 
         } else {
             //checkGuess[i].style.color = "red";
-            checkGuess[i] = letterBox.background = "red";
+            checkGuess[i] = letterBox.background = 'red';
             //return checkGuess;
             console.log(checkGuess[i]);
         }
     }
+}
+
+function clearInput(){
+    document.getElementById('enterBox').value = null;
 }
 
 function getResult() {
