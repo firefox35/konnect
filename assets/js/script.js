@@ -24,7 +24,6 @@ function storeInfo() {
 
 
 
-
 function timer() {
 
 }
@@ -32,15 +31,15 @@ function timer() {
 
 
 //function enterGuess() {
-    //let txt = document.getElementById('enterBox');
-    //let btn1 = document.getElementsByClassName('ansBtn');
-    //let out1 = document.getElementById('output-data');
-    //out1.innerHTML = txt.value;
+//    let txt = document.getElementById('enterBox');
+//    let btn1 = document.getElementsByClassName('ansBtn');
+//    let out1 = document.getElementById('box');
+//    out1.innerHTML = txt.value;
 
 //}
 
 
-
+//let myFunction = {enterGuess};
 
 function game() {
     //Setting an Array of Words
@@ -54,70 +53,57 @@ function game() {
     console.log(word);
     console.log(guess);
     //Split the Array in Seperate Letters
-    //let letters = word.split('');
-    //let checkGuess = guess.split('');
+    let randWord = word.split('');
+    guess.split('');
     //let result = guess.localeCompare(word);
-    //let colorG = document.querySelector("#clr1");
-    //let colorO = document.querySelector(".clr2");
-    //let colorR = document.querySelector(".clr3");
-    //console.log(letters);
-    ///console.log(checkGuess);
+    
+    console.log(randWord);
+    //console.log(checkGuess);
     //console.log(result);
+    guess.length;
+
+    let letterBox = document.getElementsByClassName('box');
+    let green = document.getElementsByClassName('clr1');
+    let orange = document.getElementsByClassName('clr2');
+    let red = document.getElementsByClassName('clr3');
 
     for (let i = 0; i < guess.length; i++) {
+        letterBox[i].innerText = guess[i];
+
         //let letters = word.split('');
-        //let checkGuess = guess.split('');
-        let guessResult = guess[i];
-        let randWord = word[i];
-        
+        let checkGuess = guess.split('');
+        console.log(checkGuess);
+        //console.log(letters);
 
         //let result = letters[i].localeCompare(checkGuess[i]);
-        if (randWord.match(guessResult)) {
-            ///guessResult.colorG = "green";
-            
-            document.getElementById("out1").value = guessResult;
-           // document.getElementsByClassName('out2').innerHTML = guessResult[1].value;
-            //document.getElementsByClassName('out3').innerHTML = guessResult[2].value;
-            //document.getElementsByClassName('out4').innerHTML = guessResult[3].value;
-            //document.getElementsByClassName('out5').innerHTML = guessResult[4].value;
-          
-            return guessResult;
-            console.log(guessResult);
-        } else if (randWord.includes(guessResult)) {
-            //guessResult.colorO;
-     
-            document.getElementById("out1").value = guessResult;
-            //document.getElementsByClassName('out2').innerHTML = guessResult[1].value;
-            //document.getElementsByClassName('out3').innerHTML = guessResult[2].value;
-            //document.getElementsByClassName('out4').innerHTML = guessResult[3].value;
-            //document.getElementsByClassName('out5').innerHTML = guessResult[4].value;
-            return guessResult;
-            console.log(guessResult);
-            
-        } else {
-          
-            document.getElementById("out1").value = guessResult;
-            //document.getElementsByClassName('out2').innerHTML = guessResult[1].value;
-            //document.getElementsByClassName('out3').innerHTML = guessResult[2].value;
-            //document.getElementsByClassName('out4').innerHTML = guessResult[3].value;
-            //document.getElementsByClassName('out5').innerHTML = guessResult[4].value;
-           //document.getElementsByClassName('out5').value = guessResult.indexOf("", 4);
-            return guessResult;
-            console.log(guessResult);
-        }
+        if (word.match(checkGuess[i])) {
+            //checkGuess[i].style.color = 'green';
+            checkGuess[i] = letterBox.background = "green";
+            //return checkGuess;
+            console.log(checkGuess[i]);
 
-        
+        } else if (word.includes(checkGuess[i])) {
+            //checkGuess[i].style.color = "orange";
+            checkGuess[i] = letterBox.background = "orange";
+            //return checkGuess;
+            console.log(checkGuess[i]);
+
+        } else {
+            //checkGuess[i].style.color = "red";
+            checkGuess[i] = letterBox.background = "red";
+            //return checkGuess;
+            console.log(checkGuess[i]);
+        }
     }
 }
-    
-game();
 
+function getResult() {
+    let box = document.getElementsByClassName('box');
+    box.innerHTML = guess[i].value;
+    let result = game(box);
 
-
-let guessResult;
-
-
-
+    console.log(result);
+}
 
 function displayLeaderboard() {
     let name = document.getElementById("name").value;

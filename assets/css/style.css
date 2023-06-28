@@ -31,7 +31,7 @@ body {
     padding-left: 2px;
 }
 
-#clr1 {
+.clr1 {
     color: green;
 }
 
@@ -122,6 +122,9 @@ body {
 .layout {
     display: grid;
     grid-auto-flow: column;
+    font-size: 50px;
+    text-align: center;
+    gap: 5px;
 }
 
 .box {
@@ -133,7 +136,8 @@ body {
     margin-top: 20px;
     border: solid 2px red;
     border-radius: 10px;
-    gap: 5px;
+    
+    
 }
 
 #output-data {
