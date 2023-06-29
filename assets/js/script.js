@@ -60,12 +60,10 @@ function game() {
     console.log(randWord);
     //console.log(checkGuess);
     //console.log(result);
-    guess.length;
+    //guess.length;
 
     let letterBox = document.getElementsByClassName('box');
-    let green = document.getElementsByClassName('clr1');
-    let orange = document.getElementsByClassName('clr2');
-    let red = document.getElementsByClassName('clr3');
+    
 
     for (let i = 0; i < guess.length; i++) {
         letterBox[i].innerText = guess[i];
@@ -73,41 +71,59 @@ function game() {
         //let letters = word.split('');
         let checkGuess = guess.split('');
         console.log(checkGuess);
+        //let color ="";
         //console.log(letters);
-
+        let box = document.querySelector('layout');
         //let result = letters[i].localeCompare(checkGuess[i]);
         if (word.match(checkGuess[i])) {
-            //checkGuess[i].style.color = 'green';
-            checkGuess[i] = letterBox.backround = 'green';
+
+            document.getElementsByClassName('box')[i].style.backgroundColor = 'green';
+           
             //return checkGuess;
             console.log(checkGuess[i]);
 
         } else if (word.includes(checkGuess[i])) {
-            //checkGuess[i].style.color = "orange";
-            checkGuess[i] = letterBox.background = 'orange';
+
+            document.getElementsByClassName('box')[i].style.backgroundColor = 'orange';
+            
             //return checkGuess;
             console.log(checkGuess[i]);
 
         } else {
-            //checkGuess[i].style.color = "red";
-            checkGuess[i] = letterBox.background = 'red';
+
+            document.getElementsByClassName('box')[i].style.backgroundColor = 'red';
+            
             //return checkGuess;
             console.log(checkGuess[i]);
         }
     }
 }
 
-function clearInput(){
+function clearInput() {
     document.getElementById('enterBox').value = null;
 }
 
-function getResult() {
-    let box = document.getElementsByClassName('box');
-    box.innerHTML = guess[i].value;
-    let result = game(box);
+let result = [game];
 
-    console.log(result);
+function getResult(endResult) {
+
+    //let result = document.querySelector('box');
+
+    if (endResult === true) {
+        //document.getElementsByClassName('layout')[0].style.color = 'green';
+    } else if (endResult === !false && true || false && !true) {
+        //document.getElementsByClassName('layout')[0].style.color = 'orange';
+    } else {
+        //document.getElementsByClassName('layout')[0].style.color = 'red';
+    }
+    //document.getElementsByClassName('box');
+    //box.innerHTML = guess[i].value;
+    //let result = game(box);
+
+    //console.log(result);
 }
+
+getResult(result);
 
 function displayLeaderboard() {
     let name = document.getElementById("name").value;
