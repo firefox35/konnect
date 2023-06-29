@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <!--Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Konnect</title>
 </head>
 
 <body>
+    <!--About Screen code below-->
     <h1 class="heading">
         <img class="logo" src="assets/images/arrows-rotate.png" alt="logo"> KONNECT
     </h1>
@@ -20,7 +22,8 @@
         <h2>Welcome to Konnect!</h2>
         <div class="gameRules">
             <ol>
-                <img class="rules" src="assets/images/rules.png" alt="rules">
+                <a href="https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow" class="rules">
+                <img src="assets/images/rules.png" alt="rules" aria-label=""></a>
                 <li>Please enter your name in the box.</li>
                 <li>Click the Submit button.</li>
                 <li>This will bring to the main game.</li>
@@ -41,11 +44,12 @@
         </div>
         <div class="enterGame">
             <h2 id="fname">Enter your name:<input type="text" id="name">
-                <button data-type="submit" , id="enterButton" , onclick="enterGame();storeInfo()">SUBMIT</button>
+                <button data-type="submit" id="enterButton" onclick="enterGame();storeInfo()">SUBMIT</button>
             </h2>
         </div>
     </div>
 
+    <!--Game Screen code below -->
     <div class="main">
         <div class="layout">
             <div class="box" style="text-align:center"> </div>
@@ -53,30 +57,20 @@
             <div class="box" style="text-align:center"> </div>
             <div class="box" style="text-align:center"> </div>
             <div class="box" style="text-align:center"> </div>
-            <!--<input type="text" alt="output" class="outBox" id="out1" autocomplete="char1" maxlength="5">
-            <input type="text" alt="output" class="out2" id="box2" autocomplete="char2" maxlength="1">
-            <input type="text" alt="output" class="out3" id="box3" autocomplete="char3" maxlength="1">
-            <input type="text" alt="output" class="out4" id="box4" autocomplete="char4" maxlength="1">
-            <input type="text" alt="output" class="out5" id="box5" autocomplete="char5" maxlength="1">-->
         </div>
         <div class="timer">
-            <label>TIMER:
-                <span id="cdn">00:00</span>
+            <label>LIFES:
+                <span id="cdn">5</span>
             </label>
         </div>
         <div class="box1">
             <h2 id="enter">Enter your guess below:</h2>
             <input id="enterBox" type="text" maxlength="5">
         </div>
-        <button data-type="submit" class="ansBtn" onclick="game(); clearInput() ; getResult(result)">SUBMIT </button>
-
+        <button data-type="submit" class="ansBtn" onclick="game(); lifes(); clearInput()">SUBMIT </button>
     </div>
 
-
-
-
-
+    <!--JavaScript Link-->
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>

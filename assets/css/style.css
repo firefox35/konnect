@@ -31,17 +31,6 @@ body {
     padding-left: 2px;
 }
 
-.clr1 {
-    background: green;
-}
-
-.clr2 {
-    background: orange;
-}
-
-.clr3 {
-    background: red;
-}
 
 .start {
     background-color: #E6ECF0;
@@ -138,7 +127,7 @@ body {
     margin-top: 20px;
     border: solid 2px red;
     border-radius: 10px;
-    color: "";
+    color: beige;
     background-color: "";
 
 }

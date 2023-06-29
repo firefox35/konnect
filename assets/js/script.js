@@ -22,25 +22,6 @@ function storeInfo() {
 }
 
 
-
-
-function timer() {
-
-}
-
-
-
-//function enterGuess() {
-//    let txt = document.getElementById('enterBox');
-//    let btn1 = document.getElementsByClassName('ansBtn');
-//    let out1 = document.getElementById('box');
-//    out1.innerHTML = txt.value;
-
-//}
-
-
-//let myFunction = {enterGuess};
-
 function game() {
     //Setting an Array of Words
     let array = ["brown", "truck", "train"];
@@ -50,50 +31,36 @@ function game() {
     //Choosing a Random word from the Array
     let word = array[Math.floor(Math.random() * array.length)];
 
+    //let static= new Math.seedrandom();
+    //static = new Math.seedrandom(word, guess==true);
     console.log(word);
     console.log(guess);
     //Split the Array in Seperate Letters
     let randWord = word.split('');
     guess.split('');
-    //let result = guess.localeCompare(word);
-
     console.log(randWord);
-    //console.log(checkGuess);
-    //console.log(result);
-    //guess.length;
 
     let letterBox = document.getElementsByClassName('box');
-    
 
     for (let i = 0; i < guess.length; i++) {
+
         letterBox[i].innerText = guess[i];
 
-        //let letters = word.split('');
         let checkGuess = guess.split('');
         console.log(checkGuess);
-        //let color ="";
-        //console.log(letters);
-        let box = document.querySelector('layout');
-        //let result = letters[i].localeCompare(checkGuess[i]);
-        if (word.match(checkGuess[i])) {
 
+        let box = document.querySelector('layout');
+        
+        if (word.match(checkGuess[i])) {
             document.getElementsByClassName('box')[i].style.backgroundColor = 'green';
-           
-            //return checkGuess;
             console.log(checkGuess[i]);
 
         } else if (word.includes(checkGuess[i])) {
-
             document.getElementsByClassName('box')[i].style.backgroundColor = 'orange';
-            
-            //return checkGuess;
             console.log(checkGuess[i]);
 
         } else {
-
             document.getElementsByClassName('box')[i].style.backgroundColor = 'red';
-            
-            //return checkGuess;
             console.log(checkGuess[i]);
         }
     }
@@ -103,7 +70,37 @@ function clearInput() {
     document.getElementById('enterBox').value = null;
 }
 
-let result = [game];
+
+
+function lifes() {
+    document.getElementsByClassName('ansBtn');
+    let count = 5;
+    count -=1;
+    document.getElementById('cdn').innerHTML = count;
+
+   // for (i = 0; i <= count.length; i--) {
+
+      //  if (guess === true) {
+       //     alert("You're a winner!!");
+      //  } else if (count === 0 && guess === true) {
+         //   alert("You're a winner");
+      //  } else {
+         //   alert('You lose!!');
+      //  }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+//let result = [game];
 
 function getResult(endResult) {
 
@@ -123,13 +120,16 @@ function getResult(endResult) {
     //console.log(result);
 }
 
-getResult(result);
+
+//getResult(result);
+
+
+
+
 
 function displayLeaderboard() {
     let name = document.getElementById("name").value;
 }
 
-function endGame() {
 
-}
 
