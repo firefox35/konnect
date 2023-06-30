@@ -21,10 +21,20 @@ function storeInfo() {
     let fname = localStorage.setItem("name", name);
 }
 
+function getWord() {
+    //Setting an Array of Words
+    let array = [];
+    //Input guess from user
+    let guess = document.getElementById('enterBox').value.toLowerCase();
+}
+
+
+let array = ["brown", "truck", "train"];
+let word = array[Math.floor(Math.random() * array.length)];;
 
 function game() {
     //Setting an Array of Words
-    let array = ["brown", "truck", "train"];
+    //let array = ["brown", "truck", "train"];
     //Input guess from user
     let guess = document.getElementById('enterBox').value.toLowerCase();
 
@@ -50,19 +60,20 @@ function game() {
         console.log(checkGuess);
 
         let box = document.querySelector('layout');
-        
-        if (word.match(checkGuess[i])) {
-            document.getElementsByClassName('box')[i].style.backgroundColor = 'green';
-            console.log(checkGuess[i]);
 
-        } else if (word.includes(checkGuess[i])) {
+        if (randWord[i] == checkGuess[i]) {
+            document.getElementsByClassName('box')[i].style.backgroundColor = 'green';
+            console.log(checkGuess);
+
+        } else if (word.includes(checkGuess[i]) && randWord[i] != checkGuess[i]) {
             document.getElementsByClassName('box')[i].style.backgroundColor = 'orange';
-            console.log(checkGuess[i]);
+            console.log(checkGuess);
 
         } else {
             document.getElementsByClassName('box')[i].style.backgroundColor = 'red';
-            console.log(checkGuess[i]);
+            console.log(checkGuess);
         }
+
     }
 }
 
@@ -70,66 +81,52 @@ function clearInput() {
     document.getElementById('enterBox').value = null;
 }
 
-
+let count = 5;
 
 function lifes() {
     document.getElementsByClassName('ansBtn');
-    let count = 5;
-    count -=1;
+    count -= 1;
     document.getElementById('cdn').innerHTML = count;
 
-   // for (i = 0; i <= count.length; i--) {
-
-      //  if (guess === true) {
-       //     alert("You're a winner!!");
-      //  } else if (count === 0 && guess === true) {
-         //   alert("You're a winner");
-      //  } else {
-         //   alert('You lose!!');
-      //  }
-    }
+    // for (i = 0; i <= count.length; i--) {
 
 
+    //   alert("You're a winner");
+    //  } else {
+    //   alert('You lose!!');
+}
 
+function showResult() {
 
-
-
-
-
-
-
-
-
-//let result = [game];
-
-function getResult(endResult) {
-
-    //let result = document.querySelector('box');
-
-    if (endResult === true) {
-        //document.getElementsByClassName('layout')[0].style.color = 'green';
-    } else if (endResult === !false && true || false && !true) {
-        //document.getElementsByClassName('layout')[0].style.color = 'orange';
+    if (guess = word && count >= 0) {
+        document.getElementsByClassName('ansBtn').disable = true;
+        alert("You're a winner!!");
+    } else if (count = 0 && guess != word) {
+        document.getElementsByClassName('ansBtn').disable = true;
+        alert("Nice Try. Go Again!!");
     } else {
-        //document.getElementsByClassName('layout')[0].style.color = 'red';
+        document.getElementsByClassName('ansBtn').disable = false;
+        console.log("Keep playing");
     }
-    //document.getElementsByClassName('box');
-    //box.innerHTML = guess[i].value;
-    //let result = game(box);
-
-    //console.log(result);
-}
-
-
-//getResult(result);
-
-
-
-
-
-function displayLeaderboard() {
-    let name = document.getElementById("name").value;
 }
 
 
 
+    //let result = [game];
+  //  function getResult(endResult) {
+
+        //let result = document.querySelector('box');
+
+    //    if (endResult === true) {
+            //document.getElementsByClassName('layout')[0].style.color = 'green';
+   //     } else if (endResult === !false && true || false && !true) {
+            //document.getElementsByClassName('layout')[0].style.color = 'orange';
+    //    } else {
+            //document.getElementsByClassName('layout')[0].style.color = 'red';
+    //    }
+        //document.getElementsByClassName('box');
+        //box.innerHTML = guess[i].value;
+        //let result = game(box);
+
+        //console.log(result);
+    //}

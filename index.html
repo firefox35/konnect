@@ -14,63 +14,78 @@
 </head>
 
 <body>
-    <!--About Screen code below-->
-    <h1 class="heading">
-        <img class="logo" src="assets/images/arrows-rotate.png" alt="logo"> KONNECT
-    </h1>
-    <div class="start">
-        <h2>Welcome to Konnect!</h2>
-        <div class="gameRules">
-            <ol>
-                <a href="https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow" class="rules">
-                <img src="assets/images/rules.png" alt="rules" aria-label=""></a>
-                <li>Please enter your name in the box.</li>
-                <li>Click the Submit button.</li>
-                <li>This will bring to the main game.</li>
-                <li>Enter your five letter word guess in the box and then click with the enter button.</li>
-                <li>Once Clicked the game timer starts. You have alotted time to complete the game before the time runs
-                    out.</li>
-                <li>Once entered your word, it then goes off to checks it against the computer word and return either
-                    with three
-                    different response colours</li>
-                <li>The <span id="green">"Green!"</span> colour refers to the right position in the box.</li>
-                <li>The <span id="orange">"Orange!"</span> colour refers to the right letter in the wrong position in
-                    the box.</li>
-                <li>The <span id="red">"Red!"</span> colour refers to the letter is not part of the game.</li>
-                <li>The game is get the word before time runs in the fast time.</li>
-                <li>You time with be show at the end of the game, if you complete the task in time.</li>
-                <li>Good Luck!</li>
-            </ol>
-        </div>
-        <div class="enterGame">
-            <h2 id="fname">Enter your name:<input type="text" id="name">
-                <button data-type="submit" id="enterButton" onclick="enterGame();storeInfo()">SUBMIT</button>
-            </h2>
-        </div>
-    </div>
+    <header>
+        <!--About Screen code below-->
+        <h1 class="heading">
+            <img class="logo" src="assets/images/arrows-rotate.png" alt="logo"> KONNECT
+        </h1>
+    </header>
 
-    <!--Game Screen code below -->
-    <div class="main">
-        <div class="layout">
-            <div class="box" style="text-align:center"> </div>
-            <div class="box" style="text-align:center"> </div>
-            <div class="box" style="text-align:center"> </div>
-            <div class="box" style="text-align:center"> </div>
-            <div class="box" style="text-align:center"> </div>
+    <main>
+        <div class="start">
+            <h2>Welcome to Konnect!</h2>
+            <div class="gameRules">
+                <ol>
+                    <a href="https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow"
+                        class="rules">
+                        <img src="assets/images/rules.png" alt="rules" aria-label=""></a>
+                    <li>Please enter your name in the box.</li>
+                    <li>Click the Submit button.</li>
+                    <li>This will bring to the main game.</li>
+                    <li>Enter your five letter word guess in the box and then click with the enter button.</li>
+                    <li>Once Clicked the game timer starts. You have alotted time to complete the game before the time
+                        runs
+                        out.</li>
+                    <li>Once entered your word, it then goes off to checks it against the computer word and return
+                        either
+                        with three
+                        different response colours</li>
+                    <li>The <span id="green">"Green!"</span> colour refers to the right position in the box.</li>
+                    <li>The <span id="orange">"Orange!"</span> colour refers to the right letter in the wrong position
+                        in
+                        the box.</li>
+                    <li>The <span id="red">"Red!"</span> colour refers to the letter is not part of the game.</li>
+                    <li>The game is get the word before time runs in the fast time.</li>
+                    <li>You time with be show at the end of the game, if you complete the task in time.</li>
+                    <li>Good Luck!</li>
+                </ol>
+            </div>
+            <div class="enterGame">
+                <h2 id="fname">Enter your name:<input type="text" id="name">
+                    <button data-type="submit" id="enterButton" onclick="enterGame();storeInfo()">SUBMIT</button>
+                </h2>
+            </div>
         </div>
-        <div class="timer">
-            <label>LIFES:
-                <span id="cdn">5</span>
-            </label>
-        </div>
-        <div class="box1">
-            <h2 id="enter">Enter your guess below:</h2>
-            <input id="enterBox" type="text" maxlength="5">
-        </div>
-        <button data-type="submit" class="ansBtn" onclick="game(); lifes(); clearInput()">SUBMIT </button>
-    </div>
 
+        <!--Game Screen code below -->
+        <div class="main">
+            <div class="layout">
+                <div class="box" style="text-align:center"> </div>
+                <div class="box" style="text-align:center"> </div>
+                <div class="box" style="text-align:center"> </div>
+                <div class="box" style="text-align:center"> </div>
+                <div class="box" style="text-align:center"> </div>
+            </div>
+            <div class="timer">
+                <label>LIFES:
+                    <span id="cdn">5</span>
+                </label>
+            </div>
+            <div class="box1">
+                <h2 id="enter">Enter your guess below:</h2>
+                <input id="enterBox" type="text" maxlength="5">
+            </div>
+            <button data-type="submit" class="ansBtn"
+                onclick="getWord(); game(); lifes(); clearInput(); showResult()">SUBMIT
+            </button>
+        </div>
+    </main>
+    <footer>
+    </footer>
     <!--JavaScript Link-->
     <script src="assets/js/script.js"></script>
+
+
 </body>
+
 </html>

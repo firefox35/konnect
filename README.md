@@ -9,37 +9,41 @@ Konnect is a word game where the computer selects a random word and you have to 
 ### Site Wide
 
 Navigation Menu
-* The navigation is very simple to the game, once you enter your name into the input field and click submit you will be able to enter the game.
-* Once in the game screen its about entering your guess and 
+
+- The navigation is very simple to the game, once you enter your name into the input field and click submit you will be able to enter the game.
+- Once in the game screen its about entering your guess and
 
 Footer
 
 404 Error
 
-* Broken link to page.
-* Error due favicon not working.
+- Broken link to page.
+- Error due favicon not working.
 
 ![Error 404](assets/images/Error404.PNG)
 
 ### About Screen
 
-* About Screen Image
-    * The user is shown with an introduction of electricity flowing throught the screen needed to be Konnect to the game.
+- About Screen Image
 
-* About Screen Description 
-    * The user is shown a screen with general rules of the game and where to enter the person and submit to enter the game.
+  - The user is shown with an introduction of electricity flowing throught the screen needed to be Konnect to the game.
+
+- About Screen Description
+  - The user is shown a screen with general rules of the game and where to enter the person and submit to enter the game.
 
 ![About Screen](assets/images/startScreen.PNG)
 
 ### Main Game Screen
 
-* Game Screen Image
-    * The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows throught the game.
+- Game Screen Image
 
-* Game Screen Description
-    * The user is displayed with the game as per the game rules shown in the about screen.
+  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows throught the game.
+
+- Game Screen Description
+  - The user is displayed with the game as per the game rules shown in the about screen.
 
 ![Game Screen](assets/images/gamescreen.PNG)
+
 ## Design
 
 Wireframes - Unizard.io
@@ -111,11 +115,7 @@ Responsiveness
 
 Steps to test:
 
-1.[Konnect](https://firefox35.github.io/konnect/)
-2.
-3.
-4.
-5.
+1.[Konnect](https://firefox35.github.io/konnect/) 2. 3. 4. 5.
 
 Expected:
 
@@ -140,17 +140,16 @@ Navigation
 
 Test 1
 
- * Store Name in Local Storage. - [Konnect](https://firefox35.github.io/konnect/)
+- Store Name in Local Storage. - [Konnect](https://firefox35.github.io/konnect/)
 
-Steps to Test: 
+Steps to Test:
 
 1. Display of Introduction Screen
-2. Enter name in input field 
+2. Enter name in input field
 3. The input field shows the name.
 4. Click Submit.
 5. The user is redirected to the Game Screen
-6. The name is stored in local storage, 
-
+6. The name is stored in local storage,
 
 Expected:
 
@@ -160,19 +159,17 @@ Result:
 
 No errors and worked as expected.
 
-
 Test 2
 
- * Nagivate to Game Screen - [Konnect](https://firefox35.github.io/konnect/)
+- Nagivate to Game Screen - [Konnect](https://firefox35.github.io/konnect/)
 
 Steps to Test:
 
 1. Display of Introduction Screen
-2. Enter name in input field 
+2. Enter name in input field
 3. The input field shows the name.
 4. Click Submit.
 5. The user is redirected to the Game Screen
-
 
 Expected:
 
@@ -181,7 +178,6 @@ Enter into Game Screen.
 Result:
 
 No errors and worked as expected.
-
 
 Test 3
 
@@ -247,43 +243,49 @@ Validation Testing
 
   Credits
 
-  * Links to Images and Content used in the game.
+  - Links to Images and Content used in the game.
 
-    * Logo Image
-        * https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid
+    - Logo Image
 
-    * Electicity Image
-        * https://www.vox.com/2016/9/19/12938086/electrify-everything
+      - https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid
 
-    * Know the Rule Image
-        * https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow
+    - Electicity Image
 
-    * Stickman Image
-        * https://www.facebook.com/ElectricConnectionsAntigua/
-        * https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021
+      - https://www.vox.com/2016/9/19/12938086/electrify-everything
 
-  * Learning Material
-    * Videos
-        * https://www.youtube.com/watch?v=aEj0Wu33hJM
-        * https://www.youtube.com/watch?v=On9dzBcNWJk
-        * https://www.youtube.com/watch?v=xxDqhU-0mek
-        * https://www.youtube.com/watch?v=yZwYuDgfnY4
-        * https://www.youtube.com/watch?v=96hV2FTg1dU
-        * https://www.youtube.com/watch?v=tx19kr_jfO8
-        * https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+    - Know the Rule Image
 
-    * Websites
-        * https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields 
-        * https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/  
-        * https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute. 
-        * https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
-        * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
-        * https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
-        * https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
-        * https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
-        * https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
-        * https://www.programiz.com/javascript/examples/string-comparison
-        * https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
-        * https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
-        * https://teamtreehouse.com/community/how-to-create-life-counter
-        * 
+      - https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow
+
+    - Stickman Image
+      - https://www.facebook.com/ElectricConnectionsAntigua/
+      - https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021
+
+  - Learning Material
+
+    - Videos
+
+      - https://www.youtube.com/watch?v=aEj0Wu33hJM
+      - https://www.youtube.com/watch?v=On9dzBcNWJk
+      - https://www.youtube.com/watch?v=xxDqhU-0mek
+      - https://www.youtube.com/watch?v=yZwYuDgfnY4
+      - https://www.youtube.com/watch?v=96hV2FTg1dU
+      - https://www.youtube.com/watch?v=tx19kr_jfO8
+      - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+
+    - Websites
+      - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
+      - https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/
+      - https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute.
+      - https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
+      - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+      - https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
+      - https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
+      - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
+      - https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
+      - https://www.programiz.com/javascript/examples/string-comparison
+      - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
+      - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
+      - https://teamtreehouse.com/community/how-to-create-life-counter
+        -tps://teamtreehouse.com/community/how-to-create-life-counter
+      - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
