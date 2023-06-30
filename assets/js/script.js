@@ -28,21 +28,15 @@ function getWord() {
     let guess = document.getElementById('enterBox').value.toLowerCase();
 }
 
-
+//Setting an Array of Words
 let array = ["brown", "truck", "train"];
+//Choosing a Random word from the Array
 let word = array[Math.floor(Math.random() * array.length)];;
 
 function game() {
-    //Setting an Array of Words
-    //let array = ["brown", "truck", "train"];
     //Input guess from user
     let guess = document.getElementById('enterBox').value.toLowerCase();
 
-    //Choosing a Random word from the Array
-    //let word = array[Math.floor(Math.random() * array.length)];
-
-    //let static= new Math.seedrandom();
-    //static = new Math.seedrandom(word, guess==true);
     console.log(word);
     console.log(guess);
     //Split the Array in Seperate Letters
@@ -100,10 +94,10 @@ function showResult() {
 
     if (guess = word && count >= 0) {
         document.getElementsByClassName('ansBtn').disable = true;
-        alert("You're a winner!!");
+        showAlert("You're a winner!!");
     } else if (count = 0 && guess != word) {
         document.getElementsByClassName('ansBtn').disable = true;
-        alert("Nice Try. Go Again!!");
+        showAlert("Nice Try. Go Again!!");
     } else {
         document.getElementsByClassName('ansBtn').disable = false;
         console.log("Keep playing");

@@ -113,13 +113,23 @@ Navigation
 
 Responsiveness
 
+Responsiveness was tested on screen sizes from 320px on Chrome, Edge, Firefox and Opera browsers.
+
 Steps to test:
 
-1.[Konnect](https://firefox35.github.io/konnect/) 2. 3. 4. 5.
+1. Open browser and navigate to [Konnect](https://firefox35.github.io/konnect/)
+2. Open the developer tools (right click and inspect)
+3. Set to responsive and decrease width to 320px
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
 
 Expected:
 
+No issues regards with overlapping, images and links
+
 Result:
+
+No issue to report.
 
 Accessibility
 
@@ -181,36 +191,67 @@ No errors and worked as expected.
 
 Test 3
 
+- User guess word submitted - [Konnect](https://firefox35.github.io/konnect/)
+
 Steps to Test:
-[Konnect](https://firefox35.github.io/konnect/)
+
+1. In the game screen.
+2. Enter guess word into the input field.
+3. Click submit.
+4. Displays on output boxes.
+
 Expected:
+Word should display in output boxes.
+
 Result:
+No errors and worked as expected.
 
 Test 4
 
+- User guess word clears when submitted - [Konnect](https://firefox35.github.io/konnect/)
+
 Steps to Test:
-[Konnect](https://firefox35.github.io/konnect/)
+
+1. In the game screen.
+2. Enter guess word into the input field.
+3. Click submit.
+4. Displays on output boxes.
+5. Input field is empty.
+
 Expected:
+
+Input field to become clear for next guess.
+
 Result:
+
+No errors and worked as expected.
 
 Test 5
 
+- The user is shown the result of the guess - [Konnect](https://firefox35.github.io/konnect/)
+
 Steps to Test:
-[Konnect](https://firefox35.github.io/konnect/)
+
 Expected:
+
 Result:
 
 Test 6
 
+- The result shows the right colour scheme - [Konnect](https://firefox35.github.io/konnect/)
+
 Steps to Test:
-[Konnect](https://firefox35.github.io/konnect/)
+
 Expected:
+
 Result:
 
 Test 7
 
+- Random word remains static during guessing the right answer - [Konnect](https://firefox35.github.io/konnect/)
+
 Steps to Test:
-[Konnect](https://firefox35.github.io/konnect/)
+
 Expected:
 Result:
 
@@ -226,10 +267,20 @@ Result:
 Validation Testing
 
 - HTML
+
+* index.html
+
 - CSS
+
+* style.css
+
 - JAVASCRIPT
 
+* script.js
+
   Unfixed Bugs
+
+* Responsiveness of the website worked on all devices and screen sizes
 
   ## Deployment
 
@@ -237,55 +288,70 @@ Validation Testing
 
   Deployment of Live Version from Github
 
+* The website was created using CodeAnyWhere editor and the code was pushed to a repository in GitHub called Konnect.
+
+* I used the following GitHub commands to push the code to the repository, everytime a chance is made to the code. This is what they called version control. Its basically a backup version of your code if anything goes wrong.
+* git add <file> - This command is basically saving your code
+* git commit -m "Commit Message"
+* git push
+
   The live link can be found here -
 
   Clone the Repository Code Locally
 
-  Credits
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+* In the GitHub repository, navigate to the Settings tab
+* From the menu on left select 'Pages'
+* From the source section drop-down menu, select the Branch: main
+* Click 'Save'
+* A live link will be displayed in a green banner when published successfully.
 
-  - Links to Images and Content used in the game.
+The live link can be found here - <https://firefox35.github.io/konnect/>
 
-    - Logo Image
+Credits
 
-      - https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid
+- Links to Images and Content used in the game.
 
-    - Electicity Image
+  - Logo Image
 
-      - https://www.vox.com/2016/9/19/12938086/electrify-everything
+    - https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid
 
-    - Know the Rule Image
+  - Electicity Image
 
-      - https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow
+    - https://www.vox.com/2016/9/19/12938086/electrify-everything
 
-    - Stickman Image
-      - https://www.facebook.com/ElectricConnectionsAntigua/
-      - https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021
+  - Know the Rule Image
 
-  - Learning Material
+    - https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow
 
-    - Videos
+  - Stickman Image
+    - https://www.facebook.com/ElectricConnectionsAntigua/
+    - https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021
 
-      - https://www.youtube.com/watch?v=aEj0Wu33hJM
-      - https://www.youtube.com/watch?v=On9dzBcNWJk
-      - https://www.youtube.com/watch?v=xxDqhU-0mek
-      - https://www.youtube.com/watch?v=yZwYuDgfnY4
-      - https://www.youtube.com/watch?v=96hV2FTg1dU
-      - https://www.youtube.com/watch?v=tx19kr_jfO8
-      - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+- Learning Material
 
-    - Websites
-      - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
-      - https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/
-      - https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute.
-      - https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
-      - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
-      - https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
-      - https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
-      - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
-      - https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
-      - https://www.programiz.com/javascript/examples/string-comparison
-      - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
-      - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
-      - https://teamtreehouse.com/community/how-to-create-life-counter
-        -tps://teamtreehouse.com/community/how-to-create-life-counter
-      - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
+  - Videos
+
+    - https://www.youtube.com/watch?v=aEj0Wu33hJM
+    - https://www.youtube.com/watch?v=On9dzBcNWJk
+    - https://www.youtube.com/watch?v=xxDqhU-0mek
+    - https://www.youtube.com/watch?v=yZwYuDgfnY4
+    - https://www.youtube.com/watch?v=96hV2FTg1dU
+    - https://www.youtube.com/watch?v=tx19kr_jfO8
+    - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+
+  - Websites
+    - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
+    - https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/
+    - https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute.
+    - https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+    - https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
+    - https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
+    - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
+    - https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
+    - https://www.programiz.com/javascript/examples/string-comparison
+    - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
+    - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
+    - https://teamtreehouse.com/community/how-to-create-life-counter
+    - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
