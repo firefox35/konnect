@@ -39,7 +39,7 @@ function game() {
     let guess = document.getElementById('enterBox').value.toLowerCase();
 
     //Choosing a Random word from the Array
-    let word = array[Math.floor(Math.random() * array.length)];
+    //let word = array[Math.floor(Math.random() * array.length)];
 
     //let static= new Math.seedrandom();
     //static = new Math.seedrandom(word, guess==true);
