@@ -90,16 +90,14 @@ body {
     border-radius: 30px;
 }
 
-
-
 .main {
     background-color: #E6ECF0;
     box-sizing: border-box;
     width: 40%;
-    height: 80vh;
+    height: 70vh;
     background-image: url("../images/stickman2.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     margin-left: 30%;
     margin-right: 20%;
     margin-bottom: 5px;
@@ -113,7 +111,7 @@ body {
     grid-auto-flow: column;
     font-size: 50px;
     text-align: center;
-    gap: 5px;
+    gap: 2px;
     color: "";
     background-color: "";
 }
@@ -131,28 +129,6 @@ body {
     background-color: "";
 
 }
-
-#output-data {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    padding: 5px;
-    font-size: 20px;
-
-}
-
-.out1 {
-    border: solid 2px red;
-    background-color: ghostwhite;
-    font-size: 40px;
-    text-align: center;
-    height: 30px;
-    width: 80px;
-}
-
-
-
 
 .timer {
     display: flex;
@@ -205,15 +181,31 @@ body {
 }
 
 /* --------- Media queries */
-@media (max-width: 1216px) {
+@media (max-width: 1350px) {
+    .start {
+        margin-left: 25%;
+    }
+
     .main {
-        width: 40%;
-        height: 50vh;
+        width: 60%;
+        height: 85vh;
         background-size: 100% 580px;
-        margin-left: 30%;
+        margin-left: 20%;
         margin-right: 20%;
         padding: 2px;
         display: none;
+    }
+
+    .layout {
+        gap: 5px;
+    }
+
+    #enterBox {
+        margin-bottom: 20px;
+    }
+
+    .ansBtn {
+        margin-top: 0px;
     }
 }
 
@@ -232,25 +224,25 @@ body {
 
     .main {
         width: 44%;
-        height: 52vh;
-        background-size: 400px 590px;
+        height: 85vh;
+        background-size: 410px 590px;
         margin-left: 30%;
         margin-right: 20%;
         padding: 2px;
         display: none;
     }
 
-    .enter {
-        margin-left: -10px;
-        margin-right: 15px;
+    #enter {
+        margin-left: 18%;
+        margin-right: 1px;
     }
 
     #enterBox {
-        margin-left: 15%;
+        margin-left: 18%;
     }
 
     .ansBtn {
-        margin-left: 24%;
+        margin-left: 28%;
     }
 }
 
@@ -259,18 +251,18 @@ body {
 
     .main {
         width: 50%;
-        height: 52vh;
+        height: 65vh;
         margin-left: 24%;
         margin-right: 10px;
-        background-size: 440px 580px;
+        background-size: 420px 580px;
     }
 
     #enter {
-        margin-left: 60px;
+        margin-left: 20%;
     }
 
     #enterBox {
-        margin-left: 60px;
+        margin-left: 20%;
     }
 }
 
@@ -284,10 +276,10 @@ body {
 
     .main {
         width: 55%;
-        height: 58vh;
+        height: 85vh;
         margin-left: 22%;
         margin-right: 10px;
-        background-size: 440px 660px;
+        background-size: 450px 660px;
     }
 
     #output-box {
@@ -304,30 +296,30 @@ body {
     }
 
     #enter {
-        margin-right: 80px;
-        margin-left: 50px;
-        margin-top: 80px;
+        margin-right: 10px;
+        margin-left: 18%;
+        margin-top: 50px;
         margin-bottom: 2px;
-        font-size: 20px;
+        font-size: 28px;
         padding-left: 10px;
     }
 
     #enterBox {
-        width: 200px;
-        height: 50px;
+        width: 250px;
+        height: 60px;
         margin-left: 35px;
         margin-right: 80px;
-        border-radius: 30px;
+        border-radius: 10px;
         margin-bottom: 30px;
         padding-left: 10px;
         padding-right: 5px;
     }
 
     .ansBtn {
-        margin-left: 30%;
+        margin-left: 32%;
         margin-top: 10px;
-        width: 150px;
-        height: 40px;
+        width: 180px;
+        height: 50px;
         border-radius: 30px;
     }
 }
@@ -341,11 +333,11 @@ body {
     }
 
     .main {
-        width: 50%;
-        height: 52vh;
+        width: 62%;
+        height: 90vh;
         margin-left: 22%;
         margin-right: 10px;
-        background-size: 400px 620px;
+        background-size: 450px 620px;
     }
 
     .box {
@@ -354,14 +346,19 @@ body {
 
     #enter {
         margin-left: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: 250px;
         border-radius: 10px;
+        font-size: 20px;
     }
 
     #enterBox {
-        margin-left: 30px;
+        margin-left: 12%;
         width: 200px;
+    }
+
+    .ansBtn {
+        margin-left: 28%;
     }
 }
 
@@ -374,33 +371,36 @@ body {
     }
 
     .main {
-        width: 75%;
-        height: 50vh;
+        width: 73%;
+        height: 85vh;
         margin-left: 14%;
         margin-right: 10px;
-        background-size: 350px 580px;
+        background-size: 450px 580px;
     }
 
-    #outputBx {
+    .box {
         width: 35px;
         height: 35px;
         gap: 2px;
     }
 
     #enter {
-        margin-left: 20px;
-        margin-bottom: 20px;
+        margin-left: 16%;
+        margin-bottom: 30px;
+        font-size: 23px;
     }
 
     #enterBox {
-        width: 200px;
-        margin-left: 20px;
+        width: 220px;
+        margin-left: 19%;
     }
 }
 
 @media (max-width: 414px) {
-    * {
-        border: solid 2px red;
+
+
+    body {
+        background-image: url("../images/electricity4.jpg");
     }
 
     .heading {
@@ -416,7 +416,7 @@ body {
 
     .start {
         width: 95%;
-        height: 70vh;
+        height: 100vh;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 5px;
@@ -453,8 +453,8 @@ body {
 
     .main {
         width: 95%;
-        height: 50vh;
-        background-size: 350px 560px;
+        height: 80vh;
+        background-size: 360px 560px;
         margin-top: 20px;
         margin-left: 10px;
         margin-right: 5px;
@@ -462,21 +462,22 @@ body {
         display: none;
     }
 
-    #output-data {
-        gap: 1px;
-        font-size: 14px;
+    .layout {
+        gap: 5px;
+        font-size: 40px;
         text-align: center;
+
     }
 
-    #outputBx {
-        width: 50px;
-        height: 50px;
-        margin-left: 5px;
+    .box {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
         border-radius: 10px;
     }
 
     .timer {
-        font-size: 15px;
+        font-size: 40px;
         font-weight: bold;
         margin-top: 5px;
         margin-bottom: 120px;
@@ -485,25 +486,25 @@ body {
     #timer-input {
         height: 130px;
         width: 50px;
-        font-size: 25px;
+        font-size: 45px;
         border: solid 2px red;
     }
 
     #enter {
-        font-size: 16px;
+        font-size: 22px;
         margin-top: 80px;
-        margin-left: 18%;
-        margin-bottom: 15px;
+        margin-left: 6%;
+        margin-bottom: 25px;
         font-weight: bold;
 
     }
 
     #enterBox {
         margin-bottom: 10px;
-        margin-left: 15%;
+        margin-left: 10%;
         height: 40px;
-        width: 180px;
-        font-size: 20px;
+        width: 200px;
+        font-size: 40px;
         text-align: center;
         border-radius: 10px;
     }
@@ -520,6 +521,10 @@ body {
 }
 
 @media (max-width: 320px) {
+
+    body {
+        background-image: url("../images/electricity4.jpg");
+    }
 
     .heading {
         margin-bottom: 5px;
@@ -538,10 +543,9 @@ body {
 
     .start {
         width: 90%;
-        height: 6%;
+        height: auto;
         margin-left: 5%;
         margin-right: 5%;
-
         margin-bottom: 12px;
         padding: 5px;
         padding-right: 10px;
@@ -581,7 +585,7 @@ body {
     .main {
         width: 95%;
         height: 85vh;
-        background-size: 330px 560px;
+        background-size: 285px 560px;
         max-width: 830px;
         max-height: 650px;
         margin-left: 8px;
@@ -590,24 +594,25 @@ body {
         display: none;
     }
 
-    #output-data {
-        gap: 20px;
-        padding: 20px;
+    .layout {
+        gap: 1px;
+        padding: 1px;
+        margin-left: 1%;
 
     }
 
-    #output-box {
-        font-size: 50px;
+    .box {
+        font-size: 30px;
         text-align: center;
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
     }
 
 
     .timer {
         display: flex;
         justify-content: center;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
         margin-bottom: 150px;
     }
@@ -619,26 +624,26 @@ body {
         border: solid 2px red;
     }
 
-    .main .enter {
+    #enter {
         font-size: 18px;
         margin-top: 80px;
-        margin-left: 20%;
-        margin-bottom: -200px;
+        margin-left: 5%;
+        margin-bottom: 20px;
         font-weight: bold;
 
     }
 
     #enterBox {
-        margin-left: 20%;
+        margin-left: 4%;
         height: 30px;
         width: 180px;
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
         border: solid 2px red;
     }
 
     .ansBtn {
-        margin-left: 25%;
+        margin-left: 27%;
         margin-bottom: 25px;
         margin-top: 30px;
         width: 150px;

@@ -295,16 +295,16 @@ Validation Testing
 * git commit -m "Commit Message"
 * git push
 
-  The live link can be found here -
+The live link can be found here - <https://firefox35.github.io/konnect/>
 
-  Clone the Repository Code Locally
+Clone the Repository Code Locally
 
-* The site was deployed to GitHub pages. The steps to deploy are as follows:
-* In the GitHub repository, navigate to the Settings tab
-* From the menu on left select 'Pages'
-* From the source section drop-down menu, select the Branch: main
-* Click 'Save'
-* A live link will be displayed in a green banner when published successfully.
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab
+- From the menu on left select 'Pages'
+- From the source section drop-down menu, select the Branch: main
+- Click 'Save'
+- A live link will be displayed in a green banner when published successfully.
 
 The live link can be found here - <https://firefox35.github.io/konnect/>
 

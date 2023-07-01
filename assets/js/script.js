@@ -76,7 +76,7 @@ function clearInput() {
 }
 
 let count = 5;
-
+let randWord = [];
 function lifes() {
     document.getElementsByClassName('ansBtn');
     count -= 1;
@@ -92,19 +92,30 @@ function lifes() {
 
 function showResult() {
 
-    if (guess = word && count >= 0) {
-        document.getElementsByClassName('ansBtn').disable = true;
-        showAlert("You're a winner!!");
-    } else if (count = 0 && guess != word) {
-        document.getElementsByClassName('ansBtn').disable = true;
-        showAlert("Nice Try. Go Again!!");
-    } else {
-        document.getElementsByClassName('ansBtn').disable = false;
-        console.log("Keep playing");
+    for (i = 0; i < game.length; i++) {
+
+        if (game == true && count >= 0) {
+            document.getElementsByClassName('ansBtn').disable = true;
+            confirm("You're a winner!!");
+        } else if (count = 0 && game == false) {
+            document.getElementsByClassName('ansBtn').disable = true;
+            confirm("Nice Try. Go Again!!");
+        } else {
+            document.getElementsByClassName('ansBtn').disable = false;
+            confirm("Keep playing");
+        }
     }
 }
 
-
+function endGame() {
+    let option = name + " YOU'RE A WINNER\n START GAME AGAIN!\n CLICK OK!\n or\n EXIT GAME!\n CLICK EXIT";
+    if (showResult == true) {
+        document.getElementsByClassName('ansBtn').reset = false;
+        document.getElementsByClassName('ansBtn').disable = false;
+    } else {
+        document.getElementsByClassName('ansBtn').disable = false;
+    }
+}
 
     //let result = [game];
   //  function getResult(endResult) {
