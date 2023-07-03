@@ -76,62 +76,43 @@ function clearInput() {
 }
 
 let count = 5;
+let checkGuess = [];
+let fname = localStorage.getItem("name", name);;
 let randWord = [];
+let guess = "";
+
 function lifes() {
     document.getElementsByClassName('ansBtn');
-    count -= 1;
     document.getElementById('cdn').innerHTML = count;
+    count -= 1;
 
-    // for (i = 0; i <= count.length; i--) {
 
-
-    //   alert("You're a winner");
-    //  } else {
-    //   alert('You lose!!');
-}
-
-function showResult() {
-
-    for (i = 0; i < game.length; i++) {
-
-        if (game == true && count >= 0) {
-            document.getElementsByClassName('ansBtn').disable = true;
-            confirm("You're a winner!!");
-        } else if (count = 0 && game == false) {
-            document.getElementsByClassName('ansBtn').disable = true;
-            confirm("Nice Try. Go Again!!");
-        } else {
-            document.getElementsByClassName('ansBtn').disable = false;
-            confirm("Keep playing");
-        }
-    }
-}
-
-function endGame() {
-    let option = name + " YOU'RE A WINNER\n START GAME AGAIN!\n CLICK OK!\n or\n EXIT GAME!\n CLICK EXIT";
-    if (showResult == true) {
-        document.getElementsByClassName('ansBtn').reset = false;
-        document.getElementsByClassName('ansBtn').disable = false;
+    if (randWord === checkGuess && count >= 0) {
+        document.getElementsByClassName('ansBtn').disabled = 'disabled';
+        endGame();
+        return;
     } else {
-        document.getElementsByClassName('ansBtn').disable = false;
+        document.getElementsByClassName('ansBtn').disabled = false;
+        //endGame();
+        return;
     }
 }
 
-    //let result = [game];
-  //  function getResult(endResult) {
+let gameOver;
 
-        //let result = document.querySelector('box');
+function endGame(winner) {
+    gameOver = true;
+    if (winner == true) {
+        confirm(fname + " you have won");
+    } else {
+        return;
+        //confirm("Nice Try.Go Again!!");
+    }
+}
+endGame();
 
-    //    if (endResult === true) {
-            //document.getElementsByClassName('layout')[0].style.color = 'green';
-   //     } else if (endResult === !false && true || false && !true) {
-            //document.getElementsByClassName('layout')[0].style.color = 'orange';
-    //    } else {
-            //document.getElementsByClassName('layout')[0].style.color = 'red';
-    //    }
-        //document.getElementsByClassName('box');
-        //box.innerHTML = guess[i].value;
-        //let result = game(box);
+function resetGame() {
+    resetBtn = document.getElementById('resetBtn');
+    resetBtn.game();
+}
 
-        //console.log(result);
-    //}

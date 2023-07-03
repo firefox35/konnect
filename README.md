@@ -97,8 +97,8 @@ Website Mockup Generator
 
 Resize images
 
--
--
+- This application was used to resize images of the konnect website in desktop, laptop, tablet and mobile devices.
+- https://www.resizepixel.com/
 
 Suppressed Images
 
@@ -325,8 +325,16 @@ Credits
     - https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow
 
   - Stickman Image
+
     - https://www.facebook.com/ElectricConnectionsAntigua/
     - https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021
+
+  - Play Again Image
+
+    - https://www.vectorstock.com/royalty-free-vector/play-again-round-button-vector-4178103
+
+  - Home Icon Image
+    - https://icon-library.com/images/home-icon-for-website/home-icon-for-website-12.jpg
 
 - Learning Material
 
