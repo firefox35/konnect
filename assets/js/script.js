@@ -1,7 +1,8 @@
 let main = document.querySelector('.main');
 let start = document.querySelector('.start');
 let isSubmitted = true;
-
+let lives = 5;
+let fname = localStorage.getItem("name", name);
 
 function enterGame() {
     if (isSubmitted) {
@@ -34,17 +35,28 @@ let array = ["brown", "truck", "train"];
 let word = array[Math.floor(Math.random() * array.length)];;
 
 function game() {
+    //let fname;
     //Input guess from user
     let guess = document.getElementById('enterBox').value.toLowerCase();
 
-    console.log(word);
-    console.log(guess);
+    //console.log(word);
+    //console.log(guess);
     //Split the Array in Seperate Letters
     let randWord = word.split('');
     guess.split('');
-    console.log(randWord);
+    //console.log(randWord);
 
     let letterBox = document.getElementsByClassName('box');
+
+    if (guess != word) {
+        decreaseLives();
+    } else if (guess == word) {
+        //console.log("winner");
+        //winner();
+        let answer = fname + ": You have won";
+        document.getElementById('result').innerHTML = answer;
+        document.getElementById('ansBtn').disabled = true;
+    }
 
     for (let i = 0; i < guess.length; i++) {
 
@@ -53,7 +65,7 @@ function game() {
         let checkGuess = guess.split('');
         console.log(checkGuess);
 
-        let box = document.querySelector('layout');
+        //let box = document.querySelector('layout');
 
         if (randWord[i] == checkGuess[i]) {
             document.getElementsByClassName('box')[i].style.backgroundColor = 'green';
@@ -75,44 +87,32 @@ function clearInput() {
     document.getElementById('enterBox').value = null;
 }
 
-let count = 5;
+
 let checkGuess = [];
-let fname = localStorage.getItem("name", name);;
+
 let randWord = [];
 let guess = "";
 
-function lifes() {
-    document.getElementsByClassName('ansBtn');
-    document.getElementById('cdn').innerHTML = count;
-    count -= 1;
+function decreaseLives() {
+    lives -= 1;
+    document.getElementById('cdn').innerHTML = lives;
 
-
-    if (randWord === checkGuess && count >= 0) {
-        document.getElementsByClassName('ansBtn').disabled = 'disabled';
-        endGame();
-        return;
+    if (lives == 0) {
+        document.getElementById('ansBtn').disabled = true;
     } else {
-        document.getElementsByClassName('ansBtn').disabled = false;
-        //endGame();
+        document.getElementById('ansBtn').disabled = false;
         return;
     }
 }
 
-let gameOver;
+function stringOnly(evt) {
+    let ch = String.fromCharCode(evt.which);
 
-function endGame(winner) {
-    gameOver = true;
-    if (winner == true) {
-        confirm(fname + " you have won");
-    } else {
-        return;
-        //confirm("Nice Try.Go Again!!");
+    if (!(/[a-zA-Z]/.test(ch))) {
+        evt.preventDefault();
     }
 }
-endGame();
 
-function resetGame() {
-    resetBtn = document.getElementById('resetBtn');
-    resetBtn.game();
-}
+
+
 

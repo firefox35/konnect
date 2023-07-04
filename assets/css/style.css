@@ -104,7 +104,7 @@ footer {
     background-size: 100% 100%;
     margin-left: 30%;
     margin-right: 20%;
-    margin-bottom: 5px;
+    margin-bottom: -15px;
     margin-top: -15px;
     padding: 2px;
     display: none;
@@ -158,8 +158,8 @@ footer {
     font-size: 40px;
     color: black;
     font-weight: bold;
-    margin-bottom: 180px;
-    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
 
 #timer-input {
@@ -169,19 +169,32 @@ footer {
     border: solid 2px red;
 }
 
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 1px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+
+
 #enter {
     font-size: 25px;
-    margin-top: -150px;
+    margin-top: 2px;
     margin-left: 28%;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
 #enterBox {
     margin-left: 28%;
     margin-right: 26px;
-    margin-top: -25px;
-    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-bottom: 5px;
     height: 60px;
     width: 252px;
     font-size: 30px;
@@ -190,10 +203,11 @@ footer {
     border-radius: 10px;
 }
 
-.ansBtn {
+
+#ansBtn {
     margin-left: 35%;
-    margin-bottom: 35px;
-    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-top: 10px;
     width: 180px;
     height: 40px;
     font-weight: bold;
@@ -204,6 +218,11 @@ footer {
 
 /* --------- Media queries */
 @media (max-width: 1350px) {
+
+    #enterButton {
+        margin-top: 5px;
+        
+    }
 
     .start {
         margin-left: 25%;
@@ -224,7 +243,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .ansBtn {
+    #ansBtn {
         margin-top: 0px;
     }
 }
@@ -265,7 +284,7 @@ footer {
         margin-left: 18%;
     }
 
-    .ansBtn {
+    #ansBtn {
         margin-left: 28%;
     }
 }
@@ -311,14 +330,22 @@ footer {
     }
 
     #resetBtn {
-        margin-left: 65%;
+        margin-left: 25%;
+    }
+
+    .timer {
+        font-size: 25px;
+    }
+
+    #result {
+        font: size 25px;
     }
 
     #enter {
         margin-right: 10px;
         margin-left: 18%;
-        margin-top: -100px;
-        margin-bottom: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 22px;
         padding-left: 10px;
     }
@@ -329,12 +356,12 @@ footer {
         margin-left: 85px;
         margin-right: 80px;
         border-radius: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         padding-left: 10px;
         padding-right: 5px;
     }
 
-    .ansBtn {
+    #ansBtn {
         margin-left: 32%;
         margin-top: 10px;
         width: 180px;
@@ -359,30 +386,30 @@ footer {
     }
 
     .box {
-        margin-left: 15px;
+        margin-left: 5px;
     }
 
-    #reset {
-        margin-left: 68%;
-        width: 40px;
-        height: 40px;
+    #resetBtn {
+        margin-left: 55%;
+        width: 50px;
+        height: 50px;
     }
 
     #enter {
-        margin-left: 30px;
-        margin-top: -100px;
-        margin-bottom: 30px;
+        margin-left: 80px;
+        margin-top: 10px;
+        margin-bottom: 5px;
         width: 250px;
         border-radius: 10px;
         font-size: 20px;
     }
 
     #enterBox {
-        margin-left: 12%;
+        margin-left: 22%;
         width: 200px;
     }
 
-    .ansBtn {
+    #ansBtn {
         margin-left: 28%;
     }
 }
@@ -403,28 +430,34 @@ footer {
     }
 
     .box {
-        width: 35px;
-        height: 35px;
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
         gap: 2px;
     }
 
     .timer {
-        margin-bottom: 80px;
+        margin-bottom: 30px;
+    }
+
+    #resetBtn {
+        margin-left: 60%;
     }
 
     #enter {
-        margin-left: 15%;
-        margin-bottom: 30px;
+        margin-left: 18%;
+        margin-bottom: 10px;
         font-size: 23px;
     }
 
     #enterBox {
         width: 220px;
-        margin-left: 19%;
+        margin-left: 22%;
     }
 
-    .ansBtn {
-        margin-left: 140px;
+    #ansBtn {
+        margin-left: 120px;
     }
 
 }
@@ -449,7 +482,7 @@ footer {
 
     .start {
         width: 95%;
-        height: 120vh;
+        height: 140vh;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 5px;
@@ -484,7 +517,7 @@ footer {
     .main {
         width: 95%;
         height: 80vh;
-        background-size: 390px 460px;
+        background-size: 360px 460px;
         margin-top: 20px;
         margin-left: 10px;
         margin-right: 5px;
@@ -503,17 +536,17 @@ footer {
         border-radius: 10px;
     }
 
-    #reset {
-        margin-left: 65%;
-        width: 40px;
-        height: 40px;
+    #resetBtn {
+        margin-left: 48%;
+        width: 50px;
+        height: 50px;
     }
 
     .timer {
-        font-size: 40px;
+        font-size: 20px;
         font-weight: bold;
         margin-top: 5px;
-        margin-bottom: 80px;
+        margin-bottom: 10px;
     }
 
     #timer-input {
@@ -523,17 +556,21 @@ footer {
         border: solid 2px red;
     }
 
+    #result {
+        font-size: 20px;
+    }
+
     #enter {
-        font-size: 22px;
-        margin-top: 80px;
-        margin-left: 6%;
-        margin-bottom: 25px;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 18%;
+        margin-bottom: 5px;
         font-weight: bold;
     }
 
     #enterBox {
         margin-bottom: 10px;
-        margin-left: 10%;
+        margin-left: 20%;
         height: 40px;
         width: 200px;
         font-size: 40px;
@@ -541,7 +578,7 @@ footer {
         border-radius: 10px;
     }
 
-    .ansBtn {
+    #ansBtn {
         margin-left: 30%;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -607,8 +644,8 @@ footer {
 
     .main {
         width: 95%;
-        height: 50vh;
-        background-size: 300px 565px;
+        height: 100vh;
+        background-size: 290px 570px;
         max-width: 830px;
         max-height: 650px;
         margin-left: 8px;
@@ -626,20 +663,21 @@ footer {
     .box {
         font-size: 30px;
         text-align: center;
+        margin-left: 5px;
         height: 35px;
         width: 35px;
     }
 
-    #reset {
-        margin-left: 60%;
-        width: 40px;
-        height: 40px;
+    #resetBtn {
+        margin-left: 35%;
+        width: 50px;
+        height: 50px;
     }
 
     .timer {
         display: flex;
         justify-content: center;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: bold;
         margin-bottom: 150px;
     }
@@ -647,29 +685,33 @@ footer {
     #timer-input {
         height: 100px;
         width: 20px;
-        font-size: 15px;
+        font-size: 18px;
         border: solid 2px red;
+    }
+
+    #result {
+        font-size: 18px;
     }
 
     #enter {
         font-size: 18px;
-        margin-top: 80px;
-        margin-left: 5%;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 15%;
+        margin-bottom: 10px;
         font-weight: bold;
     }
 
     #enterBox {
-        margin-left: 4%;
+        margin-left: 17%;
         height: 30px;
-        width: 180px;
-        font-size: 30px;
+        width: 150px;
+        font-size: 20px;
         text-align: center;
         border: solid 2px red;
     }
 
-    .ansBtn {
-        margin-left: 27%;
+    #ansBtn {
+        margin-left: 20%;
         margin-bottom: 25px;
         margin-top: 30px;
         width: 150px;

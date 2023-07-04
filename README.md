@@ -11,7 +11,7 @@ Konnect is a word game where the computer selects a random word and you have to 
 Navigation Menu
 
 - The navigation is very simple to the game, once you enter your name into the input field and click submit you will be able to enter the game.
-- Once in the game screen its about entering your guess and
+- In the game screen there is both a house and restart button that will bring you back to the Introduction Screen.
 
 Footer
 
@@ -43,6 +43,19 @@ Footer
   - The user is displayed with the game as per the game rules shown in the about screen.
 
 ![Game Screen](assets/images/gamescreen.PNG)
+
+## Extra Feautures
+
+Local Storage
+* The user enter there name and click submit will be then stored in Local Storage.
+* If you winner the game it will display the users has won with there name attached.
+
+## Future Implementation
+
+Due to time Constraints the following are required.
+* It requires a display message that you have lost the game.
+* I need to create a restart/reset to the game, this is currently been redirected to the Introduction Screen.
+* Implement a Leaderboard.
 
 ## Design
 
@@ -100,14 +113,14 @@ Resize images
 - This application was used to resize images of the konnect website in desktop, laptop, tablet and mobile devices.
 - https://www.resizepixel.com/
 
-Suppressed Images
-
--
--
-
 Navigation
 
--
+Introduction Screen
+ - Submit Button : Once you fill out your first name and click the button it will bring you to the game screen.
+
+Game Screen
+ - Home Button : Will bring you back to the Introduction Screen.
+ - Play Again : Currently will bring you back to the Introduction Screen. (This is a work in progress due to time constraints).
 
 ## Testing
 
@@ -133,13 +146,28 @@ No issue to report.
 
 Accessibility
 
+The following criteria were met for testing.
+
+*
+*
+*
+*
+
+Manual testing performed as expected and accessible.
+
 ### Lighthouse Testing
 
-About & Main Screen
+Introduction Screen
+![Introduction] 
+
+Game Screen
+![Game]
 
 Functional Testing
 
-Navigation
+Navigation Links
+
+* Perform testing was carried out on all navigation links and found to be working perfectly by way of clicking each buttons.
 
 | Navigation   | Page to Load |
 | ------------ | ------------ |
@@ -232,9 +260,16 @@ Test 5
 
 Steps to Test:
 
+1. In the game screen.
+2. Enter guess word into the input field.
+3. Click submit.
+4. Displays the result from the output boxes.
+
 Expected:
+Shows the result from the guess. 
 
 Result:
+No errors and worked as expected.
 
 Test 6
 
@@ -242,25 +277,119 @@ Test 6
 
 Steps to Test:
 
+1. In the game screen.
+2. Enter guess word into the input field.
+3. Click submit.
+4. A result is displayed on the output boxes.
+5. Result shows colours of the user guess.
+
 Expected:
+Displays the colour scheme in the output.
 
 Result:
+No errors and worked as expected.
 
 Test 7
 
 - Random word remains static during guessing the right answer - [Konnect](https://firefox35.github.io/konnect/)
 
 Steps to Test:
+1. In the game screen.
+2. Enter guess word into the input field.
+3. Click submit.
+4. A result is displayed on the output boxes.
+5. Enter your next guess 
+6. Click submit.
+7. Displays the same random word again.
+8. Process is done a number of time till the user guesses the right word.
 
 Expected:
+The random word stays static during the game.
+
 Result:
+No errors and worked as expected.
 
 Test 8
+Input field can only input a string value - [Konnect](https://firefox35.github.io/konnect/)
 
 Steps to Test:
-[Konnect](https://firefox35.github.io/konnect/)
+1. In the game screen.
+2. Enter numbers into the input field.
+3. Click submit.
+ 
 Expected:
+Rejects the integer value.
+
 Result:
+No errors and worked as expected.
+
+Test 9
+The displays the result of the winner - [Konnect](https://firefox35.github.io/konnect/)
+
+Steps to Test:
+1. In the game screen.
+2. Enter guess word into the input field.
+3. Click submit.
+4. Repeat Process till the right answer.
+ 
+Expected:
+Displays the result of the winner.
+
+Result:
+No errors and worked as expected.
+
+Test 10
+Input field can only input a string value - [Konnect](https://firefox35.github.io/konnect/)
+
+Steps to Test:
+1. In the game screen.
+2. Enter numbers into the input field.
+3. Click submit.
+ 
+Expected:
+Rejects the integer value.
+
+Result:
+No errors and worked as expected.
+
+Test 11
+Home Button on Game Screen - [Konnect](https://firefox35.github.io/konnect/)
+
+Steps to Test:
+1. In the game screen.
+2. Click on Home button.
+
+Expected:
+Return to the Introduction Screen.
+
+Result:
+No errors and worked as expected.
+
+Test 12
+Play Again Button on Game Screen - [Konnect](https://firefox35.github.io/konnect/)
+
+Steps to Test:
+1. In the game screen.
+2. Click on the Play Again button.
+
+Expected:
+Restarts the game again.
+
+Result:
+Due to time constraints the result is that the button returns you to the introdution screen but you can still play the game again.
+
+Test 12
+Play Again Button on Game Screen - [Konnect](https://firefox35.github.io/konnect/)
+
+Steps to Test:
+1. In the game screen.
+2. Click on the Play Again button.
+
+Expected:
+Restarts the game again.
+
+Result:
+Due to time constraints the result is that the button returns you to the introdution screen but you can still play the game again.
 
 - Header Icons/Links
 
@@ -338,28 +467,61 @@ Credits
 
 - Learning Material
 
-  - Videos
-
+- Videos
+   - Use JavaScript to Get Value from a textbox and display on the page.
     - https://www.youtube.com/watch?v=aEj0Wu33hJM
+
+   - Compare Elements of Two Arrays Using for Loop.
     - https://www.youtube.com/watch?v=On9dzBcNWJk
+
+   - Compare Two Arrays in JavaScript
     - https://www.youtube.com/watch?v=xxDqhU-0mek
+
+   - How to insert text with button click
     - https://www.youtube.com/watch?v=yZwYuDgfnY4
+
+   - Saving User Input in JavaScript
     - https://www.youtube.com/watch?v=96hV2FTg1dU
+
+   - Compare Objects and Arrays
     - https://www.youtube.com/watch?v=tx19kr_jfO8
+
+   - Compare two strings using True or False
     - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+    
+   - How to Make input text allow only letters backspace and delete in js
+    - https://www.youtube.com/watch?v=P6bmRQKwxSk
 
   - Websites
-    - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
-    - https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/
-    - https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute.
-    - https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
-    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
-    - https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
-    - https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
-    - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
-    - https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
-    - https://www.programiz.com/javascript/examples/string-comparison
-    - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
-    - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
+    Stack Over Flow 
+     - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
+     - https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
+     - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
+     - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
+     
+    Treehouse
     - https://teamtreehouse.com/community/how-to-create-life-counter
-    - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
+
+    Tutorialspoint
+    - https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute.
+
+    Ceos3c.com
+    - https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/
+
+    Codingbeautydev.com
+    - https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
+
+    Developer.mozilla.org
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+    
+    Google.com
+    - https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
+   
+    Freecodecamp.org
+    - https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
+
+    Programiz.com
+    - https://www.programiz.com/javascript/examples/string-comparison
+    
+    
+   

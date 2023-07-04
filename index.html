@@ -70,16 +70,18 @@
                 </form>
 
                 <div class="timer">
-                    <label>LIFES:
-                        <span id="cdn">5</span>
+                    <label>LIVES:
+                        <span id="cdn">5</span><br>
                     </label>
+                    <span id="result"></span>
                 </div>
             </div>
+
             <div class="box1">
                 <h2 id="enter">Enter your guess below:</h2>
-                <input id="enterBox" type="text" maxlength="5">
+                <input id="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)">
             </div>
-            <button data-type="submit" class="ansBtn" onclick="getWord(); game(); lifes(); clearInput() ">SUBMIT
+            <button data-type="submit" id="ansBtn" onclick="getWord(); game(); clearInput() ">SUBMIT
             </button>
         </div>
     </main>
