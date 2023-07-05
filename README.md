@@ -25,7 +25,6 @@ Footer
 
   ![konnect](assets/images/konnect-footer.PNG)
 
-
 404 Error
 
 - Broken link to page.
@@ -40,6 +39,7 @@ Footer
   - The user is shown with an introduction of electricity flowing throught the screen needed to be Konnect to the game.
 
 - About Screen Description
+
   - The user is shown a screen with general rules of the game and where to enter the person and submit to enter the game.
 
     ![About Screen](assets/images/startScreen.PNG)
@@ -51,6 +51,7 @@ Footer
   - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows throught the game.
 
 - Game Screen Description
+
   - The user is displayed with the game as per the game rules shown in the about screen.
 
     ![Game Screen](assets/images/gamescreen.PNG)
@@ -164,21 +165,23 @@ Result:
 
 No issue to report.
 
+
 Accessibility
 
 The following criteria were met for testing.
 
--
--
--
--
+- All navigation links accessibility
+- Text or titles descriptions are visuable.
+- Heading level are not missed.
+- HTML page attribute has been set.
 
 Manual testing performed as expected and accessible.
+
 
 ### Lighthouse Testing
 
 Konnect Screens
-![Both Screens](assests/images/Lighthouse-test.PNG)
+![Both Screens](assets/images/Lighthouse-test.PNG)
 
 Functional Testing
 
@@ -191,16 +194,16 @@ Navigation Links
 | About Screen | index.html   |
 | Main Screen  | index.html   |
 
-*Game Testing
+\*Game Testing
 
-  -The game was tested to ensure its functionality was correctly working.
-  -The following test scenarios were covered.
+-The game was tested to ensure its functionality was correctly working.
+-The following test scenarios were covered.
 
 Test 1
 
 - Store Name in Local Storage. - [Konnect](https://firefox35.github.io/konnect/)
 
-    Steps to Test:
+  Steps to Test:
 
         1. Display of Introduction Screen
         2. Enter name in input field
@@ -209,20 +212,19 @@ Test 1
         5. The user is redirected to the Game Screen
         6. The name is stored in local storage,
 
-    Expected:
+  Expected:
 
         To submit name into local storage.
 
-    Result:
+  Result:
 
         No errors and worked as expected.
-
 
 Test 2
 
 - Nagivate to Game Screen - [Konnect](https://firefox35.github.io/konnect/)
 
-    Steps to Test:
+  Steps to Test:
 
         1. Display of Introduction Screen
         2. Enter name in input field
@@ -230,11 +232,11 @@ Test 2
         4. Click Submit.
         5. The user is redirected to the Game Screen
 
-    Expected:
+  Expected:
 
         Enter into Game Screen.
 
-    Result:
+  Result:
 
         No errors and worked as expected.
 
@@ -242,18 +244,18 @@ Test 3
 
 - User guess word submitted - [Konnect](https://firefox35.github.io/konnect/)
 
-    Steps to Test:
+  Steps to Test:
 
         1. In the game screen.
         2. Enter guess word into the input field.
         3. Click submit.
         4. Displays on output boxes.
 
-    Expected:
+  Expected:
 
         Word should display in output boxes.
 
-    Result:
+  Result:
 
         No errors and worked as expected.
 
@@ -261,7 +263,7 @@ Test 4
 
 - User guess word clears when submitted - [Konnect](https://firefox35.github.io/konnect/)
 
-    Steps to Test:
+  Steps to Test:
 
         1. In the game screen.
         2. Enter guess word into the input field.
@@ -269,31 +271,30 @@ Test 4
         4. Displays on output boxes.
         5. Input field is empty.
 
-    Expected:
+  Expected:
 
         Input field to become clear for next guess.
 
-    Result:
+  Result:
 
         No errors and worked as expected.
-
 
 Test 5
 
 - The user is shown the result of the guess - [Konnect](https://firefox35.github.io/konnect/)
 
-    Steps to Test:
+  Steps to Test:
 
         1. In the game screen.
         2. Enter guess word into the input field.
         3. Click submit.
         4. Displays the result from the output boxes.
 
-    Expected:
+  Expected:
 
         Shows the result from the guess.
 
-    Result:
+  Result:
 
         No errors and worked as expected.
 
@@ -301,7 +302,7 @@ Test 6
 
 - The result shows the right colour scheme - [Konnect](https://firefox35.github.io/konnect/)
 
-    Steps to Test:
+  Steps to Test:
 
         1. In the game screen.
         2. Enter guess word into the input field.
@@ -309,17 +310,17 @@ Test 6
         4. A result is displayed on the output boxes.
         5. Result shows colours of the user guess.
 
-    Expected:
-        Display the colour scheme in the output.
+  Expected:
+  Display the colour scheme in the output.
 
-    Result:
-        No errors and worked as expected.
+  Result:
+  No errors and worked as expected.
 
 Test 7
 
 - Random word remains static during guessing the right answer - [Konnect](https://firefox35.github.io/konnect/)
 
-    Steps to Test:
+  Steps to Test:
 
         1. In the game screen.
         2. Enter guess word into the input field.
@@ -330,11 +331,11 @@ Test 7
         7. Display the same random word again.
         8. Process is done a number of time till the user guesses the right word.
 
-    Expected:
-        The random word stays static during the game.
+  Expected:
+  The random word stays static during the game.
 
-    Result:
-        No errors and worked as expected.
+  Result:
+  No errors and worked as expected.
 
 Test 8
 
@@ -469,20 +470,28 @@ Play Again Button on Game Screen - [Konnect](https://firefox35.github.io/konnect
 
 Validation Testing
 
-    * HTML
-        * index.html
-        ![Konnect Screens](assets/images/HTML-Validation.PNG)
+- HTML
 
-    * CSS
-        * style.css
-        ![Konnect Screens](assets/images/CSS-Validation.PNG)
+  - index.html
 
-    * JAVASCRIPT
-        * script.js
+     ![Konnect Screens](assets/images/HTML-Validation.PNG)
+
+- CSS
+
+  - style.css
+
+     ![Konnect Screens](assets/images/CSS-Validation.PNG)
+
+- JAVASCRIPT
+
+    - script.js
+
+     ![konnect Screens](assets/images/javascript-validation.PNG)
 
 Unfixed Bugs
 
 - Responsiveness of the website worked on all devices and screen sizes
+
 
 ## Deployment
 

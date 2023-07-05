@@ -35,7 +35,7 @@ function getWord() {
 let array = ["brown", "truck", "train", "boats", "house", "lakes", "plane", "games", "field", "items",
     "movie", "stray", "fight", "hours", "light", "phone"];
 //Choosing a Random word from the Array
-let word = array[Math.floor(Math.random() * array.length)];;
+let word = array[Math.floor(Math.random() * array.length)];
 
 function game() {
     //Input guess from user
