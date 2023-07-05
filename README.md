@@ -551,31 +551,32 @@ Credits
 
 - Videos
 
-  - Use JavaScript to Get Value from a textbox and display on the page.
-  - https://www.youtube.com/watch?v=aEj0Wu33hJM
+    - Use JavaScript to Get Value from a textbox and display on the page.
+        - https://www.youtube.com/watch?v=aEj0Wu33hJM
 
-  - Compare Elements of Two Arrays Using for Loop.
-  - https://www.youtube.com/watch?v=On9dzBcNWJk
+    - Compare Elements of Two Arrays Using for Loop.
+        - https://www.youtube.com/watch?v=On9dzBcNWJk
 
-  - Compare Two Arrays in JavaScript
-  - https://www.youtube.com/watch?v=xxDqhU-0mek
+    - Compare Two Arrays in JavaScript
+        - https://www.youtube.com/watch?v=xxDqhU-0mek
 
-  - How to insert text with button click
-  - https://www.youtube.com/watch?v=yZwYuDgfnY4
+    - How to insert text with button click
+        - https://www.youtube.com/watch?v=yZwYuDgfnY4
 
-  - Saving User Input in JavaScript
-  - https://www.youtube.com/watch?v=96hV2FTg1dU
+    - Saving User Input in JavaScript
+        - https://www.youtube.com/watch?v=96hV2FTg1dU
 
-  - Compare Objects and Arrays
-  - https://www.youtube.com/watch?v=tx19kr_jfO8
+    - Compare Objects and Arrays
+        - https://www.youtube.com/watch?v=tx19kr_jfO8
 
-  - Compare two strings using True or False
-  - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+    - Compare two strings using True or False
+        - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
 
-  - How to Make input text allow only letters backspace and delete in js
-  - https://www.youtube.com/watch?v=P6bmRQKwxSk
+    - How to Make input text allow only letters backspace and delete in js
+        - https://www.youtube.com/watch?v=P6bmRQKwxSk
 
-  - Websites
+- Websites
+
     Stack Over Flow
 
     - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
