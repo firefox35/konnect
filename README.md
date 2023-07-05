@@ -165,7 +165,6 @@ Result:
 
 No issue to report.
 
-
 Accessibility
 
 The following criteria were met for testing.
@@ -176,7 +175,6 @@ The following criteria were met for testing.
 - HTML page attribute has been set.
 
 Manual testing performed as expected and accessible.
-
 
 ### Lighthouse Testing
 
@@ -474,24 +472,23 @@ Validation Testing
 
   - index.html
 
-     ![Konnect Screens](assets/images/HTML-Validation.PNG)
+    ![Konnect Screens](assets/images/HTML-Validation.PNG)
 
 - CSS
 
   - style.css
 
-     ![Konnect Screens](assets/images/CSS-Validation.PNG)
+    ![Konnect Screens](assets/images/konnect-ccs-validation.PNG)
 
 - JAVASCRIPT
 
-    - script.js
+  - script.js
 
-     ![konnect Screens](assets/images/javascript-validation.PNG)
+  ![konnect Screens](assets/images/javascript-validation.PNG)
 
 Unfixed Bugs
 
 - Responsiveness of the website worked on all devices and screen sizes
-
 
 ## Deployment
 
@@ -551,67 +548,74 @@ Credits
 
 - Videos
 
-    - Use JavaScript to Get Value from a textbox and display on the page.
-        - https://www.youtube.com/watch?v=aEj0Wu33hJM
+  - Use JavaScript to Get Value from a textbox and display on the page.
 
-    - Compare Elements of Two Arrays Using for Loop.
-        - https://www.youtube.com/watch?v=On9dzBcNWJk
+    - https://www.youtube.com/watch?v=aEj0Wu33hJM
 
-    - Compare Two Arrays in JavaScript
-        - https://www.youtube.com/watch?v=xxDqhU-0mek
+  - Compare Elements of Two Arrays Using for Loop.
 
-    - How to insert text with button click
-        - https://www.youtube.com/watch?v=yZwYuDgfnY4
+    - https://www.youtube.com/watch?v=On9dzBcNWJk
 
-    - Saving User Input in JavaScript
-        - https://www.youtube.com/watch?v=96hV2FTg1dU
+  - Compare Two Arrays in JavaScript
 
-    - Compare Objects and Arrays
-        - https://www.youtube.com/watch?v=tx19kr_jfO8
+    - https://www.youtube.com/watch?v=xxDqhU-0mek
 
-    - Compare two strings using True or False
-        - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+  - How to insert text with button click
 
-    - How to Make input text allow only letters backspace and delete in js
-        - https://www.youtube.com/watch?v=P6bmRQKwxSk
+    - https://www.youtube.com/watch?v=yZwYuDgfnY4
+
+  - Saving User Input in JavaScript
+
+    - https://www.youtube.com/watch?v=96hV2FTg1dU
+
+  - Compare Objects and Arrays
+
+    - https://www.youtube.com/watch?v=tx19kr_jfO8
+
+  - Compare two strings using True or False
+
+    - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+
+  - How to Make input text allow only letters backspace and delete in js
+    - https://www.youtube.com/watch?v=P6bmRQKwxSk
 
 - Websites
 
-    Stack Over Flow
+  Stack Over Flow
 
-    - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
-    - https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
-    - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
-    - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
+  - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
+  - https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
+  - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
+  - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
 
-    Treehouse
+  Treehouse
 
-    - https://teamtreehouse.com/community/how-to-create-life-counter
+  - https://teamtreehouse.com/community/how-to-create-life-counter
 
-    Tutorialspoint
+  Tutorialspoint
 
-    - https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute.
+  - https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute.
 
-    Ceos3c.com
+  Ceos3c.com
 
-    - https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/
+  - https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/
 
-    Codingbeautydev.com
+  Codingbeautydev.com
 
-    - https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
+  - https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
 
-    Developer.mozilla.org
+  Developer.mozilla.org
 
-    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
 
-    Google.com
+  Google.com
 
-    - https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
+  - https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
 
-    Freecodecamp.org
+  Freecodecamp.org
 
-    - https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
+  - https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
 
-    Programiz.com
+  Programiz.com
 
-    - https://www.programiz.com/javascript/examples/string-comparison
+  - https://www.programiz.com/javascript/examples/string-comparison

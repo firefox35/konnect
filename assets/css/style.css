@@ -503,7 +503,7 @@ footer {
     /*Introduction Screen */
     .start {
         width: 95%;
-        height: 140vh;
+        height: 120vh;
         margin-top: 10px;
         margin-left: 10px;
         margin-right: 5px;
@@ -539,7 +539,7 @@ footer {
     .main {
         width: 95%;
         height: 80vh;
-        background-size: 360px 460px;
+        background-size: 380px 460px;
         margin-top: 20px;
         margin-left: 10px;
         margin-right: 5px;
