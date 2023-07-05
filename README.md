@@ -309,10 +309,13 @@ Test 6
         5. Result shows colours of the user guess.
 
   Expected:
-  Display the colour scheme in the output.
+
+    Display the colour scheme in the output.
 
   Result:
-  No errors and worked as expected.
+
+    No errors and worked as expected.
+
 
 Test 7
 
@@ -330,10 +333,12 @@ Test 7
         8. Process is done a number of time till the user guesses the right word.
 
   Expected:
-  The random word stays static during the game.
+
+    The random word stays static during the game.
 
   Result:
-  No errors and worked as expected.
+
+     No errors and worked as expected.
 
 Test 8
 
