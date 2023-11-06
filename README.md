@@ -36,7 +36,7 @@ Footer
 
 - About Screen Image
 
-  - The user is shown with an introduction of electricity flowing throught the screen needed to be Konnect to the game.
+  - The user is shown with an introduction of electricity flowing through the screen needed to be Konnect to the game.
 
 - About Screen Description
 
@@ -48,7 +48,7 @@ Footer
 
 - Game Screen Image
 
-  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows throught the game.
+  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
 
 - Game Screen Description
 
@@ -56,7 +56,7 @@ Footer
 
     ![Game Screen](assets/images/gamescreen.PNG)
 
-## Extra Feautures
+## Extra Features
 
 Local Storage
 
@@ -69,7 +69,7 @@ Due to time Constraints the following are required.
 
 - It requires a display message that you have lost the game.
 - I need to create a restart/reset to the game, this is currently been redirected to the Introduction Screen.
-- Implement a Leaderboard.
+- Implement a Leader board.
 
 ## Design
 
@@ -170,7 +170,7 @@ Accessibility
 The following criteria were met for testing.
 
 - All navigation links accessibility
-- Text or titles descriptions are visuable.
+- Text or titles descriptions are visible.
 - Heading level are not missed.
 - HTML page attribute has been set.
 
@@ -220,7 +220,7 @@ Test 1
 
 Test 2
 
-- Nagivate to Game Screen - [Konnect](https://firefox35.github.io/konnect/)
+- Navigate to Game Screen - [Konnect](https://firefox35.github.io/konnect/)
 
   Steps to Test:
 
@@ -298,7 +298,7 @@ Test 5
 
 Test 6
 
-- The result shows the right colour scheme - [Konnect](https://firefox35.github.io/konnect/)
+- The result shows the right color scheme - [Konnect](https://firefox35.github.io/konnect/)
 
   Steps to Test:
 
@@ -306,11 +306,11 @@ Test 6
         2. Enter guess word into the input field.
         3. Click submit.
         4. A result is displayed on the output boxes.
-        5. Result shows colours of the user guess.
+        5. Result shows colors of the user guess.
 
   Expected:
 
-    Display the colour scheme in the output.
+    Display the color scheme in the output.
 
   Result:
 
@@ -426,7 +426,7 @@ Play Again Button on Game Screen - [Konnect](https://firefox35.github.io/konnect
 
     Result:
 
-        Due to time constraints the result is that the button returns you to the introdution screen but you can still play the game again.
+        Due to time constraints the result is that the button returns you to the introduction screen but you can still play the game again.
 
 Test 12
 
@@ -443,7 +443,7 @@ Play Again Button on Game Screen - [Konnect](https://firefox35.github.io/konnect
 
     Result:
 
-        Due to time constraints the result is that the button returns you to the introdution screen but you can still play the game again.
+        Due to time constraints the result is that the button returns you to the introduction screen but you can still play the game again.
 
 - Header Icons/Links
 
@@ -451,7 +451,7 @@ Play Again Button on Game Screen - [Konnect](https://firefox35.github.io/konnect
 
     - https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid
 
-  - Electicity Image
+  - Electricity Image
 
     - https://www.vox.com/2016/9/19/12938086/electrify-everything
 
@@ -503,7 +503,7 @@ Deployment of Live Version from Github
 
 - The website was created using CodeAnyWhere editor and the code was pushed to a repository in GitHub called Konnect.
 
-- I used the following GitHub commands to push the code to the repository, everytime a chance is made to the code. This is what they called version control. Its basically a backup version of your code if anything goes wrong.
+- I used the following GitHub commands to push the code to the repository, every time a chance is made to the code. This is what they called version control. Its basically a backup version of your code if anything goes wrong.
 - git add <file> - This command is basically saving your code
 - git commit -m "Commit Message"
 - git push
@@ -529,7 +529,7 @@ Credits
 
     - https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid
 
-  - Electicity Image
+  - Electricity Image
 
     - https://www.vox.com/2016/9/19/12938086/electrify-everything
 
