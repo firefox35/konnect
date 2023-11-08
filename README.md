@@ -1,6 +1,6 @@
 # Konnect
 
-Konnect is a word game where the computer selects a random word and you have to guess the word in the least amount of lifelines. If you get a letter right in the right position of your guess it will turn green, orange shows the letter is right but in the wrong position and red show the letter doesn't belong in the game. This the link to the live version of the game (https://firefox35.github.io/konnect/)
+Konnect is a word game where the computer selects a random word and you have to guess the word in the least amount of lifelines. If you get a letter right in the right position of your guess it will turn green, orange shows the letter is right but in the wrong position and red show the letter doesn't belong in the game. This the link to the live version of the game (<https://firefox35.github.io/konnect/>)
 
 ![Mockups](assets/images/newdevices.png)
 
@@ -130,7 +130,7 @@ Website Mockup Generator
 Resize images
 
 - This application was used to resize images of the konnect website in desktop, laptop, tablet and mobile devices.
-- https://www.resizepixel.com/
+- <https://www.resizepixel.com/>
 
 Navigation
 
@@ -181,9 +181,9 @@ Manual testing performed as expected and accessible.
 Konnect Screens
 ![Both Screens](assets/images/Lighthouse-test.PNG)
 
-Functional Testing
+### Functional Testing
 
-Navigation Links
+#### Navigation Links
 
 - Perform testing was carried out on all navigation links and found to be working perfectly by way of clicking each buttons.
 
@@ -192,284 +192,150 @@ Navigation Links
 | About Screen | index.html   |
 | Main Screen  | index.html   |
 
-\*Game Testing
+#### Game Testing
 
 -The game was tested to ensure its functionality was correctly working.
+
 -The following test scenarios were covered.
 
-Test 1
+#### TEST 1 - [Konnect](https://firefox35.github.io/konnect/)
+
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| Store Name in Local Storage | 1. Display of Introduction Screen.           | To submit name into local storage | &check;|
+|                             | 2. Enter name in input field.                |                          |        |
+|                             | 3. The input field shows the name.           |                          |        |
+|                             | 4. Click Submit.                             |                          |        |
+|                             | 5. The user is redirected to the Game Screen.|                          |        |
+|                             | 6. The name is stored in local storage.      |                          |        |
+
+#### TEST 2 - [Konnect](https://firefox35.github.io/konnect/)
+
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| Navigate to Game Screen     | 1. Display of Introduction Screen.           | Enter into Game Screen   | &check;|
+|                             | 2. Enter name in Input field.                |                          |        |
+|                             | 3. The Input field shows the name.           |                          |        |
+|                             | 4. Click Submit.                             |                          |        |
+|                             | 5. The user is redirected to the Game Screen.|                          |        |
+
+#### TEST 3 - [Konnect](https://firefox35.github.io/konnect/)
+
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| User guess word submitted   | 1. In the Game Screen.                       | Word should display in Output Boxes. | &check;|
+|                             | 2. Enter guess word into the Input field.    |                          |        |
+|                             | 3. Click Submit.                             |                          |        |
+|                             | 4. Display's on Output Boxes.                |                          |        |
+
+#### TEST 4 - [Konnect](https://firefox35.github.io/konnect/)
 
-- Store Name in Local Storage. - [Konnect](https://firefox35.github.io/konnect/)
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| User guess word clears when submitted | 1. In the Game Screen | Input field to become clear for next guess.| &check;|
+|                             | 2. Enter guess word into the Input field.    |                          |        |
+|                             | 3. Click Submit                              |                          |        |
+|                             | 4. Display's on Output boxes.                |                          |        |
+|                             | 5. Input field is empty                      |                          |        |
 
-  Steps to Test:
+#### TEST 5 - [Konnect](https://firefox35.github.io/konnect/)
 
-        1. Display of Introduction Screen
-        2. Enter name in input field
-        3. The input field shows the name.
-        4. Click Submit.
-        5. The user is redirected to the Game Screen
-        6. The name is stored in local storage,
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| The user is shown the result of the guess. | 1. In the Game Screen. | Shows the result from the guess | &check;|
+|                             | 2. Enter guess word into Input field.        |                          |        |
+|                             | 3. Click Submit.                             |                          |        |
+|                             | 4. Display's the result from the Output Boxes.|                         |        |
 
-  Expected:
+#### TEST 6 - [Konnect](https://firefox35.github.io/konnect/)
 
-        To submit name into local storage.
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| The results shows the right color scheme | 1. In the Game Screen.| Display the color scheme in the output boxes.| &check;|
+|                             | 2. Enter guess word in the Input field.      |                          |        |
+|                             | 3. Click Submit.                             |                          |        |
+|                             | 4. A result is displayed on the Output Boxes.|                          |        |
+|                             | 5. Result shows colors of the user guess.    |                          |        |
 
-  Result:
+#### TEST 7 - [Konnect](https://firefox35.github.io/konnect/)
 
-        No errors and worked as expected.
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| Random word remains static during guessing the right answer | 1. In the Game Screen.| The random word stays static during the game| &check;|
+|                             | 2. Enter guess word into the input field.    |                          |        |
+|                             | 3. Click Submit.                             |                          |        |
+|                             | 4. A result displayed on the output boxes.   |                          |        |
+|                             | 5. Enter your next guess.                    |                          |        |
+|                             | 6. Click Submit.                             |                          |        |
+|                             | 7. Display the same random word again.       |                          |        |
+|                             | 8. Process is done a number of times till the user guesses the right word.|      |        |
 
-Test 2
+#### TEST 8 - [Konnect](https://firefox35.github.io/konnect/)
 
-- Navigate to Game Screen - [Konnect](https://firefox35.github.io/konnect/)
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| Input field can only input a string value. | 1. In the Game Screen.        |Rejects the integer value.| &check;|
+|                             | 2. Enter numbers into the Input Field.       |                          |        |
+|                             | 3. Click Submit.                             |                          |        |
 
-  Steps to Test:
+#### TEST 9 - [Konnect](https://firefox35.github.io/konnect/)
 
-        1. Display of Introduction Screen
-        2. Enter name in input field
-        3. The input field shows the name.
-        4. Click Submit.
-        5. The user is redirected to the Game Screen
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| The display outputs the correct result. | 1  In the Game Screen.  | Display the correct result of the winner | &check;|
+|                             | 2. Enter guess word in the Input field.      |                          |        |
+|                             | 3. Click Submit.                             |                          |        |
+|                             | 4. Repeat Process till the right answer.     |                          |        |
 
-  Expected:
+#### TEST 10 - [Konnect](https://firefox35.github.io/konnect/)
 
-        Enter into Game Screen.
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| Input field can only input a string value | 1. In the Game Screen.         | Rejects the integer value | &check;|
+|                             | 2. Enter numbers into the Input Field.       |                          |        |
+|                             | 3. Click Submit.                             |                          |        |
 
-  Result:
+#### TEST 11 - [Konnect](https://firefox35.github.io/konnect/)
 
-        No errors and worked as expected.
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| Home Button on Game Screen  | 1. In the Game Screen.                 | Return to Introduction Screen. | &check;|
+|                             | 2. Click on Home Button.                     |                          |        |
 
-Test 3
+#### TEST 12 - [Konnect](https://firefox35.github.io/konnect/)
 
-- User guess word submitted - [Konnect](https://firefox35.github.io/konnect/)
+|          Description        |            Steps                             |          Expected        | Result |
+|-----------------------------|----------------------------------------------|--------------------------|--------|
+| Play Again Button on Game Screen | 1. In the Game Screen.                  |Restart the game again    | &cross;|
+|                             | 2. Click on the Play Again Button.           |                          |        |
 
-  Steps to Test:
+## Header Icons/Links
 
-        1. In the game screen.
-        2. Enter guess word into the input field.
-        3. Click submit.
-        4. Displays on output boxes.
+- Logo Image
 
-  Expected:
+  - <https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid>
 
-        Word should display in output boxes.
+- Electricity Image
 
-  Result:
+  - <https://www.vox.com/2016/9/19/12938086/electrify-everything>
 
-        No errors and worked as expected.
+- Know the Rule Image
 
-Test 4
+  - <https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow>
 
-- User guess word clears when submitted - [Konnect](https://firefox35.github.io/konnect/)
+- Stickman Image
 
-  Steps to Test:
+  - <https://www.facebook.com/ElectricConnectionsAntigua/>
+  - <https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021>
 
-        1. In the game screen.
-        2. Enter guess word into the input field.
-        3. Click submit.
-        4. Displays on output boxes.
-        5. Input field is empty.
+- Play Again Image
 
-  Expected:
+  - <https://www.vectorstock.com/royalty-free-vector/play-again-round-button-vector-4178103>
 
-        Input field to become clear for next guess.
+- Home Icon Image
+  
+  - <https://icon-library.com/images/home-icon-for-website/home-icon-for-website-12.jpg>
 
-  Result:
-
-        No errors and worked as expected.
-
-Test 5
-
-- The user is shown the result of the guess - [Konnect](https://firefox35.github.io/konnect/)
-
-  Steps to Test:
-
-        1. In the game screen.
-        2. Enter guess word into the input field.
-        3. Click submit.
-        4. Displays the result from the output boxes.
-
-  Expected:
-
-        Shows the result from the guess.
-
-  Result:
-
-        No errors and worked as expected.
-
-Test 6
-
-- The result shows the right color scheme - [Konnect](https://firefox35.github.io/konnect/)
-
-  Steps to Test:
-
-        1. In the game screen.
-        2. Enter guess word into the input field.
-        3. Click submit.
-        4. A result is displayed on the output boxes.
-        5. Result shows colors of the user guess.
-
-  Expected:
-
-    Display the color scheme in the output.
-
-  Result:
-
-    No errors and worked as expected.
-
-
-Test 7
-
-- Random word remains static during guessing the right answer - [Konnect](https://firefox35.github.io/konnect/)
-
-  Steps to Test:
-
-        1. In the game screen.
-        2. Enter guess word into the input field.
-        3. Click submit.
-        4. A result is displayed on the output boxes.
-        5. Enter your next guess
-        6. Click submit.
-        7. Display the same random word again.
-        8. Process is done a number of time till the user guesses the right word.
-
-  Expected:
-
-    The random word stays static during the game.
-
-  Result:
-
-     No errors and worked as expected.
-
-Test 8
-
-Input field can only input a string value - [Konnect](https://firefox35.github.io/konnect/)
-
-    Steps to Test:
-
-        1. In the game screen.
-        2. Enter numbers into the input field.
-        3. Click submit.
-
-    Expected:
-
-        Rejects the integer value.
-
-    Result:
-
-        No errors and worked as expected.
-
-Test 9
-
-The displays the result of the winner - [Konnect](https://firefox35.github.io/konnect/)
-
-    Steps to Test:
-
-        1. In the game screen.
-        2. Enter guess word into the input field.
-        3. Click submit.
-        4. Repeat Process till the right answer.
-
-    Expected:
-
-        Display the result of the winner.
-
-    Result:
-
-        No errors and worked as expected.
-
-Test 10
-
-Input field can only input a string value - [Konnect](https://firefox35.github.io/konnect/)
-
-    Steps to Test:
-
-        1. In the game screen.
-        2. Enter numbers into the input field.
-        3. Click submit.
-
-    Expected:
-
-        Rejects the integer value.
-
-    Result:
-
-        No errors and worked as expected.
-
-Test 11
-Home Button on Game Screen - [Konnect](https://firefox35.github.io/konnect/)
-
-    Steps to Test:
-
-        1. In the game screen.
-        2. Click on Home button.
-
-    Expected:
-
-        Return to the Introduction Screen.
-
-    Result:
-
-        No errors and worked as expected.
-
-Test 12
-
-Play Again Button on Game Screen - [Konnect](https://firefox35.github.io/konnect/)
-
-    Steps to Test:
-
-        1. In the game screen.
-        2. Click on the Play Again button.
-
-    Expected:
-
-        Restart the game again.
-
-    Result:
-
-        Due to time constraints the result is that the button returns you to the introduction screen but you can still play the game again.
-
-Test 12
-
-Play Again Button on Game Screen - [Konnect](https://firefox35.github.io/konnect/)
-
-    Steps to Test:
-
-        1. In the game screen.
-        2. Click on the Play Again button.
-
-    Expected:
-
-        Restarts the game again.
-
-    Result:
-
-        Due to time constraints the result is that the button returns you to the introduction screen but you can still play the game again.
-
-- Header Icons/Links
-
-  - Logo Image
-
-    - https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid
-
-  - Electricity Image
-
-    - https://www.vox.com/2016/9/19/12938086/electrify-everything
-
-  - Know the Rule Image
-
-    - https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow
-
-  - Stickman Image
-
-    - https://www.facebook.com/ElectricConnectionsAntigua/
-    - https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021
-
-  - Play Again Image
-
-    - https://www.vectorstock.com/royalty-free-vector/play-again-round-button-vector-4178103
-
-  - Home Icon Image
-    - https://icon-library.com/images/home-icon-for-website/home-icon-for-website-12.jpg
 
 Validation Testing
 
@@ -527,27 +393,27 @@ Credits
 
   - Logo Image
 
-    - https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid
+    - <https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid>
 
   - Electricity Image
 
-    - https://www.vox.com/2016/9/19/12938086/electrify-everything
+    - <https://www.vox.com/2016/9/19/12938086/electrify-everything>
 
   - Know the Rule Image
 
-    - https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow
+    - <https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow>
 
   - Stickman Image
 
-    - https://www.facebook.com/ElectricConnectionsAntigua/
-    - https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021
+    - <https://www.facebook.com/ElectricConnectionsAntigua/>
+    - <https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021>
 
   - Play Again Image
 
-    - https://www.vectorstock.com/royalty-free-vector/play-again-round-button-vector-4178103
+    - <https://www.vectorstock.com/royalty-free-vector/play-again-round-button-vector-4178103>
 
   - Home Icon Image
-    - https://icon-library.com/images/home-icon-for-website/home-icon-for-website-12.jpg
+    - <https://icon-library.com/images/home-icon-for-website/home-icon-for-website-12.jpg>
 
 - Learning Material
 
@@ -555,72 +421,72 @@ Credits
 
   - Use JavaScript to Get Value from a textbox and display on the page.
 
-    - https://www.youtube.com/watch?v=aEj0Wu33hJM
+    - <https://www.youtube.com/watch?v=aEj0Wu33hJM>
 
   - Compare Elements of Two Arrays Using for Loop.
 
-    - https://www.youtube.com/watch?v=On9dzBcNWJk
+    - <https://www.youtube.com/watch?v=On9dzBcNWJk>
 
   - Compare Two Arrays in JavaScript
 
-    - https://www.youtube.com/watch?v=xxDqhU-0mek
+    - <https://www.youtube.com/watch?v=xxDqhU-0mek>
 
   - How to insert text with button click
 
-    - https://www.youtube.com/watch?v=yZwYuDgfnY4
+    - <https://www.youtube.com/watch?v=yZwYuDgfnY4>
 
   - Saving User Input in JavaScript
 
-    - https://www.youtube.com/watch?v=96hV2FTg1dU
+    - <https://www.youtube.com/watch?v=96hV2FTg1dU>
 
   - Compare Objects and Arrays
 
-    - https://www.youtube.com/watch?v=tx19kr_jfO8
+    - <https://www.youtube.com/watch?v=tx19kr_jfO8>
 
   - Compare two strings using True or False
 
-    - https://www.youtube.com/watch?v=zJ7LWiRxxFQ
+    - <https://www.youtube.com/watch?v=zJ7LWiRxxFQ>
 
   - How to Make input text allow only letters backspace and delete in js
-    - https://www.youtube.com/watch?v=P6bmRQKwxSk
+    - <https://www.youtube.com/watch?v=P6bmRQKwxSk>
 
 - Websites
 
   Stack Over Flow
 
-  - https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields
-  - https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript
-  - https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript
-  - https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes
+  - <https://stackoverflow.com/questions/70648133/get-array-data-into-input-fields>
+  - <https://stackoverflow.com/questions/2173229/how-do-i-write-a-rgb-color-value-in-javascript>
+  - <https://stackoverflow.com/questions/62975985/change-text-color-using-if-else-in-javascript>
+  - <https://stackoverflow.com/questions/13628159/split-a-string-into-two-text-boxes>
 
   Treehouse
 
-  - https://teamtreehouse.com/community/how-to-create-life-counter
+  - <https://teamtreehouse.com/community/how-to-create-life-counter>
 
   Tutorialspoint
 
-  - https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character,use%20minlength%20attribute.
+  - <https://www.tutorialspoint.com/How-to-limit-the-number-of-characters-allowed-in-form-input-text-field#:~:text=To%20set%20the%20maximum%20character>,use%20minlength%20attribute.
 
   Ceos3c.com
 
-  - https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/
+  - <https://www.ceos3c.com/javascript/store-user-input-in-a-variable-with-javascript/>
 
   Codingbeautydev.com
 
-  - https://codingbeautydev.com/blog/javascript-get-first-character-of-string/
+  - <https://codingbeautydev.com/blog/javascript-get-first-character-of-string/>
 
   Developer.mozilla.org
 
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+  - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration>
 
   Google.com
 
-  - https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358,vid:7LGpIQ6ceJs
+  - <https://www.google.com/search?rlz=1C1CHBF_enIE1013IE1013&sxsrf=APwXEdfryJ2_ypKt_n4JQstvdsVzFDShAA:1687622045414&q=save+user+input+from+one+function+to+another+javascript&tbm=vid&sa=X&ved=2ahUKEwiGuqCEotz_AhVGhlwKHYU4Bq0Q0pQJegQIChAB&biw=1360&bih=657&dpr=1#fpstate=ive&vld=cid:b4a90358>,vid:7LGpIQ6ceJs
 
   Freecodecamp.org
 
-  - https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
+  - <https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/>
 
   Programiz.com
 
-  - https://www.programiz.com/javascript/examples/string-comparison
+  - <https://www.programiz.com/javascript/examples/string-comparison>
