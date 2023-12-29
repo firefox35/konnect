@@ -71,13 +71,13 @@ Due to time Constraints the following are required.
 - I need to create a restart/reset to the game, this is currently been redirected to the Introduction Screen.
 - Implement a Leader board.
 
-## ux Design
+## UX Design
 
 Wireframes - Balsamiq
 
 - About Screen
 
-  ![About Screen](assets/images/Info-screen-mockup.PNG)
+  ![About Screen](assets/images/info-screen-mockup.PNG)
 
 - Main Game Screen
 
@@ -116,11 +116,10 @@ CodeAnyWhere
 
 - Is the application where you create your website in file structures.
 
-Uizard.io
+Balsamiq
 
 - This application was used to create mockups for the konnect website.
-- <https://app.uizard.io>
-- <https://app.uizard.io/prototypes/bMqxdZoEyxTYJrG9RKqP>
+- <https://balsamiq.com>
 
 Website Mockup Generator
 
