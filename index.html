@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <!--Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="#">
     <title>Konnect</title>
 </head>
 
 <body>
     <!--Konnect Header-->
     <header>
-        
         <h1 class="heading">
             <img class="logo" src="assets/images/arrows-rotate.png" alt="logo"> KONNECT
         </h1>
@@ -28,33 +28,38 @@
             <div class="gameRules">
                 <img src="assets/images/rules.png" class="rules" alt="rules" aria-label="">
                 <ol>
-                    <li>Please enter your name in the box.</li>
+                    <li>Please enter your name in the textbox.</li>
                     <li>Click the Submit button.</li>
-                    <li>This will bring to the main game.</li>
-                    <li>Please enter your five letter word guess in the box and then click the submit button.</li>
-                    <li>Once clicked your life's decrease each time. You have five attempts to complete the game before
-                        its
-                        game over.</li>
-                    <li>Once entered your word, it then goes off to compares checks both words and return either three
-                        different response colors</li>
+                    <li>This will bring you to the main game.</li>
+                    <li>Please enter your 5 letter word guess in the textbox and then click the submit button.</li>
+                    <li>Each time you enter a word your lives will decrease, till either you run out of guesses or you get it correct.</li>
+                    <li>You have five attempts before the game is over.</li>
+                    <li>Once you have entered your word, it then compares your word against the correct answer.</li>
+                    <li>It will then return 3 different response colours.</li>
                     <li>The <span id="green">"Green!"</span> color refers to the right position in the box.</li>
                     <li>The <span id="orange">"Orange!"</span> color refers to the right letter in the wrong position
                         in the box.</li>
                     <li>The <span id="red">"Red!"</span> color refers to the letter is not part of the game.</li>
-                    <li>The game is get the word right before your life's run out.</li>
+                    <li>The game is get the correct word before your lives run out.</li>
                     <li>You time with be show at the end of the game, if you complete the task in time.</li>
                     <li>Good Luck!</li>
                 </ol>
-            </div>
+        </div>
             <div class="enterGame">
-                <h2 id="fname">Enter your name:<input type="text" id="name">
-                    <button data-type="submit" id="enterButton" onclick="enterGame();storeInfo()">SUBMIT</button>
+                <h2 id="fname">Enter your name:
+                <input type="text" id="name"> 
                 </h2>
             </div>
+                <button data-type="submit" id="enterButton" onclick="enterGame();storeInfo()">SUBMIT</button>
         </div>
 
         <!--Game Screen code below -->
+        
         <div class="main">
+            <form class="icons">
+                <input id="homeBtn" onclick="location.reload" type="image" alt="homeBtn" src="assets/images/home-btn.png">
+                <input id="resetBtn" onclick="restartGame()" type="image" alt="resetBtn" src="assets/images/play-again.png">
+            </form>
             <div class="layout">
                 <div class="box" style="text-align:center"> </div>
                 <div class="box" style="text-align:center"> </div>
@@ -62,14 +67,8 @@
                 <div class="box" style="text-align:center"> </div>
                 <div class="box" style="text-align:center"> </div>
             </div>
+            
             <div>
-                <form>
-                    <input id="homeBtn" onclick="location.reload" type="image" alt="homeBtn"
-                        src="assets/images/home.jpg">
-                    <input id="resetBtn" onclick="restartGame()" type="image" alt="resetBtn"
-                        src="assets/images/reset.jpg">
-                </form>
-
                 <div class="timer">
                     <label>LIVES:
                         <span id="cdn">5</span><br>
@@ -78,12 +77,11 @@
                 </div>
             </div>
 
+            <h2 id="enter">Enter your guess below:</h2> 
             <div class="box1">
-                <h2 id="enter">Enter your guess below:</h2>
-                <input id="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)">
+                <input class="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)">
+                <button data-type="submit" class="ansBtn" id="ansBtn" onclick="getWord();game();clearInput()">SUBMIT</button>
             </div>
-            <button data-type="submit" id="ansBtn" onclick="getWord(); game(); clearInput()">SUBMIT
-            </button>
         </div>
     </main>
     <footer>

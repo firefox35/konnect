@@ -16,6 +16,7 @@ function enterGame() {
         isSubmitted = true;
     }
 }
+
 // Stores your name into local storage
 function storeInfo() {
     let name = document.getElementById("name").value;
@@ -28,7 +29,7 @@ function getWord() {
     //Setting an Array of Words
     let array = [];
     //Input guess from user
-    let guess = document.getElementById('enterBox').value.toLowerCase();
+    let guess = document.getElementsByClassName('enterBox').value.toLowerCase();
 }
 
 //Setting an Array of Words
@@ -86,7 +87,8 @@ function decreaseLives() {
     document.getElementById('cdn').innerHTML = lives;
 
     if (lives == 0) {
-        document.getElementById('ansBtn').disabled = true;
+        //document.getElementById('ansBtn').disabled = true;
+        document.getElementById('result').innerHTML = 'Game over. The word was ${word}';
     } else {
         document.getElementById('ansBtn').disabled = false;
         return;
@@ -101,6 +103,8 @@ function stringOnly(evt) {
         evt.preventDefault();
     }
 }
+
+
 
 
 
