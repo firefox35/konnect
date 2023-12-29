@@ -4,6 +4,30 @@ let isSubmitted = true;
 let lives = 5;
 let fname = localStorage.getItem("name", name);
 
+//let ansBtn = document.getElementById("ansBtn");
+
+//ansBtn.addEventListener("click", getWord, true);
+//ansBtn.addEventListener("click", game, true);
+//ansBtn.addEventListener("click", clearInput, true);
+
+//document.getElementById("enterButton").addEventListener("click", validateInput());
+
+//document.getElementById("ansButton").addEventListener("click", getWord());
+//game(), clearInput();
+
+//function validateInput() {
+//    let name = document.getElementById("name").value.trim();
+//    let text;
+//    if (name.length < 3) {
+//        text = "Name must more than 3 or more chars";
+//        document.getElementById("error").innerHTML - text;
+//    } else {
+//        enterGame();
+//        storeInfo();
+//    }
+//}
+
+
 // Split the index html page into two different pages - Introdution and Game Screens
 function enterGame() {
     if (isSubmitted) {
