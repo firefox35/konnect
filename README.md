@@ -42,7 +42,7 @@ Footer
 
   - The user is shown a screen with general rules of the game and where to enter the person and submit to enter the game.
 
-    ![About Screen](assets/images/startScreen.PNG)
+    ![About Screen](assets/images/intro-screen.PNG)
 
 ### Main Game Screen
 
@@ -54,7 +54,7 @@ Footer
 
   - The user is displayed with the game as per the game rules shown in the about screen.
 
-    ![Game Screen](assets/images/gamescreen.PNG)
+    ![Game Screen](assets/images/game-screen.PNG)
 
 ## Extra Features
 
@@ -71,23 +71,23 @@ Due to time Constraints the following are required.
 - I need to create a restart/reset to the game, this is currently been redirected to the Introduction Screen.
 - Implement a Leader board.
 
-## Design
+## ux Design
 
-Wireframes - Unizard.io
+Wireframes - Balsamiq
 
 - About Screen
 
-  ![About Screen](assets/images/screen1.jpeg)
+  ![About Screen](assets/images/Info-screen-mockup.PNG)
 
 - Main Game Screen
 
-  ![About Screen](assets/images/screen2.jpeg)
+  ![Game Screen](assets/images/game-screen-mockup.PNG)
 
-  ![About Screen](assets/images/screen3.jpeg)
+  ![Game Screen](assets/images/screen3.jpeg)
 
-  ![About Screen](assets/images/screen4.jpeg)
+  ![Game Screen](assets/images/screen4.jpeg)
 
-  ![About Screen](assets/images/screen5.jpeg)
+  ![Game Screen](assets/images/screen5.jpeg)
 
 ## Technologies
 
