@@ -77,7 +77,7 @@ Wireframes - Balsamiq
 
 - About Screen
 
-  ![About Screen](assets/images/info-screen-mockup.PNG)
+  ![About Screen](assets/images/intro-screen-mockup.PNG)
 
 - Main Game Screen
 
