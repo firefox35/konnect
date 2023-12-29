@@ -12,7 +12,7 @@ Header
 
 - Displays the Logo and the name of the brand to promote the game.
 
-  ![Konnect](assets/images/konnect-header.PNG)
+  ![Konnect](assets/images/header-new.PNG)
 
 Navigation Menu
 
@@ -23,7 +23,7 @@ Footer
 
 - Displays a message to visit us on Facebook
 
-  ![konnect](assets/images/konnect-footer.PNG)
+  ![konnect](assets/images/footer-new.PNG)
 
 404 Error
 
