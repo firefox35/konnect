@@ -97,19 +97,22 @@ header {
     margin: auto;
     font-size: 20px;
     margin-bottom: 30px;
+
 }
 
-#name {
+#username {
     display: block;
     margin: auto;
     margin-top: 20px;
     width: 200px;
-    height: 35px;
+    height: 45px;
 }
 
 .enterGame {
    margin-top: 40px;
    margin-bottom: 30px;
+    width: 200px;
+    height: 45px;
 }
 
 #enterButton {
@@ -238,7 +241,7 @@ header {
 }
 
 
-.ansBtn {
+#ansBtn {
     display: block;
     margin: auto;
     margin-bottom: 30px;

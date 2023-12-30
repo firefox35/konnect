@@ -47,10 +47,10 @@
         </div>
             <div class="enterGame">
                 <h2 id="fname">Enter your name:
-                <input type="text" id="name"> 
+                <input type="text" name="username" id="username"> 
                 </h2>
             </div>
-                <button data-type="submit" id="enterButton" onclick="enterGame();storeInfo()">SUBMIT</button>
+                <button data="submit" id="enterButton" >SUBMIT</button>
         </div>
 
         <!--Game Screen code below -->
@@ -80,7 +80,7 @@
             <h2 id="enter">Enter your guess below:</h2> 
             <div class="box1">
                 <input class="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)">
-                <button data-type="submit" class="ansBtn" id="ansBtn" onclick="getWord();game();clearInput()">SUBMIT</button>
+                <button class="ansBtn" type="submit" id="ansBtn" >SUBMIT</button>
             </div>
         </div>
     </main>

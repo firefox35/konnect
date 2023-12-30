@@ -2,31 +2,12 @@ let main = document.querySelector('.main');
 let start = document.querySelector('.start');
 let isSubmitted = true;
 let lives = 5;
-let fname = localStorage.getItem("name", name);
+let fname = localStorage.getItem("username", name);
 
-//let ansBtn = document.getElementById("ansBtn");
-
-//ansBtn.addEventListener("click", getWord, true);
-//ansBtn.addEventListener("click", game, true);
-//ansBtn.addEventListener("click", clearInput, true);
-
-//document.getElementById("enterButton").addEventListener("click", validateInput());
-
-//document.getElementById("ansButton").addEventListener("click", getWord());
-//game(), clearInput();
-
-//function validateInput() {
-//    let name = document.getElementById("name").value.trim();
-//    let text;
-//    if (name.length < 3) {
-//        text = "Name must more than 3 or more chars";
-//        document.getElementById("error").innerHTML - text;
-//    } else {
-//        enterGame();
-//        storeInfo();
-//    }
-//}
-
+document.getElementById('enterButton').addEventListener("click", validateInput);
+document.getElementById('ansButton').addEventListener("click", getWord);
+document.getElementById('ansButton').addEventListener("click", game);
+document.getElementById('ansButton').addEventListener("click", clearInput);
 
 // Split the index html page into two different pages - Introdution and Game Screens
 function enterGame() {
@@ -41,11 +22,24 @@ function enterGame() {
     }
 }
 
+function validateInput() {
+ let name = document.getElementById("username").value.trim();
+//    let text;
+    if (name.length < 3) {
+          alert("Name must more than 3 or more chars");
+//        text = "Name must more than 3 or more chars";
+//        document.getElementById("error").innerHTML - text;
+    } else {
+        enterGame();
+        storeInfo();
+    }
+}
+
 // Stores your name into local storage
 function storeInfo() {
-    let name = document.getElementById("name").value;
+    let name = document.getElementById("username").value;
     //Store Data Locally
-    let fname = localStorage.setItem("name", name);
+    let fname = localStorage.setItem("username", name);
 }
 
 //Gets both words to be compared
