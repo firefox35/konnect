@@ -8,6 +8,26 @@ Konnect is a word game where the computer selects a random word and you have to 
 
 ### Site Wide
 
+Game Instructions
+
+- Please enter your name in the textbox.
+- Click the Submit button.
+- This will bring you to the main game.
+- Please enter your 5 letter word guess in the textbox and then click the submit button.
+- Each time you enter a word your lives will decrease, till either you run out of guesses or you get it correct.
+- You have five attempts before the game is over.
+- Once you have entered your word, it then compares your word against the correct answer.
+- It will then return 3 different response colours.
+- The "Green!" colour refers to the right position in the box.
+- The "Orange!"colour refers to the right letter in the wrong position in the box.
+- The "Red!" color refers to the letter is not part of the game.
+- If you have guessed the word correctly it will display all the letters green and your name as a winner.
+- If you have run out of lives and your guess is wrong it will display the correct answer to the game.
+- You can end the game by clicking the home or the play again button both will bring you back to the introduction screen.
+- Good Luck!
+
+![Konnect](assets/images/header-new.PNG)
+
 Header
 
 - Displays the Logo and the name of the brand to promote the game.
