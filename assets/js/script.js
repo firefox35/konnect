@@ -4,7 +4,13 @@ let isSubmitted = true;
 let lives = 5;
 let fname = localStorage.getItem("username", name);
 
+// Add Username Button
 document.getElementById('enterButton').addEventListener("click", validateInput);
+// Home Button
+document.getElementById('homeBtn').addEventListener("click", location.reload);
+// Play Again Button
+document.getElementById('resetBtn').addEventListener("click", clearInput);
+// Play Game Buttons
 document.getElementById('ansBtn').addEventListener("click", game);
 document.getElementById('ansBtn').addEventListener("click", clearInput);
 
@@ -25,7 +31,7 @@ function enterGame() {
 function validateInput() {
     let name = document.getElementById("username").value.trim();
     if (name.length < 3) {
-          alert("Name must more than 3 or more chars");
+          alert("Username must be more than 3 characters!");
     } else {
         enterGame();
         storeInfo();
@@ -110,9 +116,3 @@ function stringOnly(evt) {
         evt.preventDefault();
     }
 }
-
-
-
-
-
-

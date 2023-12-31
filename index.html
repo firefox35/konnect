@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="#">
     <title>Konnect</title>
 </head>
 
@@ -63,8 +64,8 @@
         
         <div class="main">
             <form class="icons">
-                <input id="homeBtn" onclick="location.reload" type="image" alt="homeBtn" src="assets/images/home-btn.png">
-                <input id="resetBtn" onclick="restartGame()" type="image" alt="resetBtn" src="assets/images/play-again.png">
+                <input id="homeBtn" type="image" alt="homeBtn" src="assets/images/home-btn.png" aria-label="home button">
+                <input id="resetBtn"  type="image" alt="resetBtn" src="assets/images/play-again.png" aria-label="game reset button">
             </form>
             <div class="layout">
                 <div class="box" style="text-align:center"> </div>
@@ -86,7 +87,7 @@
             <h2 id="enter">Enter your guess below:</h2> 
             <div class="box1">
                 <input id ="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)" aria-label="Enter guess">
-                <button type="submit" id="ansBtn" >SUBMIT</button>
+                <button type="submit" id="ansBtn">SUBMIT</button>
             </div>
         </div>
     </main>

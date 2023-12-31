@@ -8,7 +8,7 @@ Konnect is a word game where the computer selects a random word and you have to 
 
 ### Site Wide
 
-Game Instructions
+# Game Instructions
 
 - Please enter your name in the textbox.
 - Your username must be more than 2 letters to be valid otherwise an alert will be displayed.
@@ -27,10 +27,31 @@ Game Instructions
 - You can end the game by clicking the home or the play again button both will bring you back to the introduction screen.
 - Good Luck!
 
+The Rules of Game Screen
+![Konnect](assets/images/game-rules.PNG)
 
-![Konnect](assets/images/header-new.PNG)
+# How the Game is played.
+
+The user has enter a word as displayed and shown with 4 reds and 1 yellow.
+This means the reds are wrong and the one yellow is in the word but in the wrong position.
+
+![Konnect](assets/images/game-words.PNG)
+
+The user has enter a word as displayed and shown with 3 reds and 2 greens.
+This means the reds are wrong and the 2 greens are correct and in the is in the right position.
+
+![Konnect](assets/images/game-words3.PNG)
+
+The view of the person who has run out of lives and has a wrong answer.
+
+![Konnect](assets/images/game-wrong-answer.PNG)
+
+The view of a person that has won the game.
+
+![Konnect](assets/images/game-won.PNG)
 
 Header
+
 
 - Displays the Logo and the name of the brand to promote the game.
 
@@ -51,7 +72,6 @@ Error
 
 - Error due favicon not working.
 
-  ![Error 404](assets/images/Error404.PNG)
 
 ### About Screen
 
@@ -86,11 +106,8 @@ Local Storage
 
 ## Future Implementation
 
-Due to time Constraints the following are required.
-
-- It requires a display message that you have lost the game.
 - I need to create a restart/reset to the game, this is currently been redirected to the Introduction Screen.
-- Implement a Leader board.
+- Implementation of a Leader board.
 
 ## UX Design
 
@@ -104,11 +121,6 @@ Wireframes - Balsamiq
 
   ![Game Screen](assets/images/game-screen-mockup.PNG)
 
-  ![Game Screen](assets/images/)
-
-  ![Game Screen](assets/images/)
-
-  ![Game Screen](assets/images/)
 
 ## Technologies
 
@@ -199,7 +211,7 @@ Manual testing performed as expected and accessible.
 ### Lighthouse Testing
 
 Konnect Screens
-![Both Screens](assets/images/Lighthouse-test.PNG)
+![Both Screens](assets/images/lighthouse-report.PNG)
 
 ### Functional Testing
 
@@ -241,6 +253,18 @@ Konnect Screens
 
 #### TEST 3 - [Konnect](https://firefox35.github.io/konnect/)
 
+|          Description        |            Steps                     |          Expected         | Result |
+|-----------------------------|--------------------------------------|---------------------------|--------|
+| Validate Username           | 1. In the About Screen.              | Displays an Alert message.| &check;|
+|                             | 2. Enter a name with 2 characters.   |                           |        |
+|                             | 3. Click the Submit.                 |                           |        |
+|                             | 4. Alert message is displayed.       |                           |        |
+|                             | 5. Click Ok.                         |                           |        |
+|                             | 2. Re-enter a correct username.      |                           |        |
+
+
+#### TEST 4 - [Konnect](https://firefox35.github.io/konnect/)
+
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
 | User guess word submitted   | 1. In the Game Screen.                       | Word should display in Output Boxes. | &check;|
@@ -248,7 +272,7 @@ Konnect Screens
 |                             | 3. Click Submit.                             |                          |        |
 |                             | 4. Display's on Output Boxes.                |                          |        |
 
-#### TEST 4 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 5 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
@@ -258,7 +282,7 @@ Konnect Screens
 |                             | 4. Display's on Output boxes.                |                          |        |
 |                             | 5. Input field is empty                      |                          |        |
 
-#### TEST 5 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 6 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
@@ -267,7 +291,7 @@ Konnect Screens
 |                             | 3. Click Submit.                             |                          |        |
 |                             | 4. Display's the result from the Output Boxes.|                         |        |
 
-#### TEST 6 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 7 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
@@ -277,7 +301,7 @@ Konnect Screens
 |                             | 4. A result is displayed on the Output Boxes.|                          |        |
 |                             | 5. Result shows colors of the user guess.    |                          |        |
 
-#### TEST 7 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 8 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
@@ -290,7 +314,7 @@ Konnect Screens
 |                             | 7. Display the same random word again.       |                          |        |
 |                             | 8. Process is done a number of times till the user guesses the right word.|      |        |
 
-#### TEST 8 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 9 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
@@ -298,7 +322,7 @@ Konnect Screens
 |                             | 2. Enter numbers into the Input Field.       |                          |        |
 |                             | 3. Click Submit.                             |                          |        |
 
-#### TEST 9 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 10 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
@@ -307,7 +331,7 @@ Konnect Screens
 |                             | 3. Click Submit.                             |                          |        |
 |                             | 4. Repeat Process till the right answer.     |                          |        |
 
-#### TEST 10 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 11 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
@@ -315,19 +339,21 @@ Konnect Screens
 |                             | 2. Enter numbers into the Input Field.       |                          |        |
 |                             | 3. Click Submit.                             |                          |        |
 
-#### TEST 11 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 12 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
 | Home Button on Game Screen  | 1. In the Game Screen.                 | Return to Introduction Screen. | &check;|
 |                             | 2. Click on Home Button.                     |                          |        |
 
-#### TEST 12 - [Konnect](https://firefox35.github.io/konnect/)
+#### TEST 13 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
 | Play Again Button on Game Screen | 1. In the Game Screen.                  |Restart the game again    | &cross;|
 |                             | 2. Click on the Play Again Button.           |                          |        |
+
+
 
 ## Header Icons/Links
 
@@ -335,26 +361,17 @@ Konnect Screens
 
   - <https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid>
 
-- Electricity Image
-
-  - <https://www.vox.com/2016/9/19/12938086/electrify-everything>
-
 - Know the Rule Image
 
   - <https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow>
 
-- Stickman Image
-
-  - <https://www.facebook.com/ElectricConnectionsAntigua/>
-  - <https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021>
-
 - Play Again Image
 
-  - <https://www.vectorstock.com/royalty-free-vector/play-again-round-button-vector-4178103>
+  - <https://icons8.com/icons/set/play-again-button>
 
 - Home Icon Image
-  
-  - <https://icon-library.com/images/home-icon-for-website/home-icon-for-website-12.jpg>
+
+  - <https://icons8.com/icons/set/home-button>
 
 
 Validation Testing
@@ -363,19 +380,19 @@ Validation Testing
 
   - index.html
 
-    ![Konnect Screens](assets/images/HTML-Validation.PNG)
+    ![Konnect Screens](assets/images/html-validation.PNG)
 
 - CSS
 
   - style.css
 
-    ![Konnect Screens](assets/images/konnect-ccs-validation.PNG)
+    ![Konnect Screens](assets/images/ccs-validation.PNG)
 
 - JAVASCRIPT
 
   - script.js
 
-  ![konnect Screens](assets/images/javascript-validation.PNG)
+  ![konnect Screens](assets/images/js-validation.PNG)
 
 Unfixed Bugs
 
@@ -412,28 +429,17 @@ Credits
 - Links to Images and Content used in the game.
 
   - Logo Image
-
     - <https://fontawesome.com/icons/arrows-rotate?f=classic&s=solid>
 
-  - Electricity Image
-
-    - <https://www.vox.com/2016/9/19/12938086/electrify-everything>
-
   - Know the Rule Image
-
     - <https://www.hubpng.com/photo/63875/rules-and-regulations-icon-clipart-png-follow>
 
-  - Stickman Image
-
-    - <https://www.facebook.com/ElectricConnectionsAntigua/>
-    - <https://www.presentermedia.com/powerpoint-animation/electrician-plug-it-in-anim-pid-8021>
-
   - Play Again Image
-
-    - <https://www.vectorstock.com/royalty-free-vector/play-again-round-button-vector-4178103>
+    - <https://icons8.com/icons/set/play-again-button>
 
   - Home Icon Image
-    - <https://icon-library.com/images/home-icon-for-website/home-icon-for-website-12.jpg>
+    - <https://icons8.com/icons/set/home-button>
+
 
 - Learning Material
 
