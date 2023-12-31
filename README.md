@@ -8,7 +8,7 @@ Konnect is a word game where the computer selects a random word and you have to 
 
 ### Site Wide
 
-# Game Instructions
+## Game Instructions
 
 - Please enter your name in the textbox.
 - Your username must be more than 2 letters to be valid otherwise an alert will be displayed.
@@ -30,23 +30,24 @@ Konnect is a word game where the computer selects a random word and you have to 
 The Rules of Game Screen
 ![Konnect](assets/images/game-rules.PNG)
 
-# How the Game is played.
+## How the Game is played.
 
-The user has enter a word as displayed and shown with 4 reds and 1 yellow.
-This means the reds are wrong and the one yellow is in the word but in the wrong position.
+- The user has enter a word as shown below with 4 reds and 1 yellow.
+- This means the reds are wrong and the one yellow is in the wrong position but part of the word.
 
 ![Konnect](assets/images/game-words.PNG)
 
-The user has enter a word as displayed and shown with 3 reds and 2 greens.
-This means the reds are wrong and the 2 greens are correct and in the is in the right position.
+- The user has enter a word as shown below with 3 reds and 2 greens.
+- This means that the reds are wrong and the 2 greens are correct and in the right position.
 
 ![Konnect](assets/images/game-words3.PNG)
 
-The view of the person who has run out of lives and has a wrong answer.
+- The user has run out of lives and has the wrong answer. 
+- Game Over - Try Again
 
 ![Konnect](assets/images/game-wrong-answer.PNG)
 
-The view of a person that has won the game.
+- The user has won the game.
 
 ![Konnect](assets/images/game-won.PNG)
 
@@ -386,7 +387,7 @@ Validation Testing
 
   - style.css
 
-    ![Konnect Screens](assets/images/ccs-validation.PNG)
+    ![Konnect Screens](assets/images/css-validation.PNG)
 
 - JAVASCRIPT
 
