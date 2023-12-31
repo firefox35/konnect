@@ -42,17 +42,16 @@ The Rules of Game Screen
 
 ![Konnect](assets/images/game-words3.PNG)
 
-- The user has run out of lives and has the wrong answer. 
+- The user has run out of lives and has the wrong answer as shown below. 
 - Game Over - Try Again
 
 ![Konnect](assets/images/game-wrong-answer.PNG)
 
-- The user has won the game.
+- The username is displayed that they have won the game as shown below.
 
 ![Konnect](assets/images/game-won.PNG)
 
 Header
-
 
 - Displays the Logo and the name of the brand to promote the game.
 
