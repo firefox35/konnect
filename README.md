@@ -11,6 +11,7 @@ Konnect is a word game where the computer selects a random word and you have to 
 Game Instructions
 
 - Please enter your name in the textbox.
+- Your username must be more than 2 letters to be valid otherwise an alert will be displayed.
 - Click the Submit button.
 - This will bring you to the main game.
 - Please enter your 5 letter word guess in the textbox and then click the submit button.
@@ -25,6 +26,7 @@ Game Instructions
 - If you have run out of lives and your guess is wrong it will display the correct answer to the game.
 - You can end the game by clicking the home or the play again button both will bring you back to the introduction screen.
 - Good Luck!
+
 
 ![Konnect](assets/images/header-new.PNG)
 
@@ -45,9 +47,8 @@ Footer
 
   ![konnect](assets/images/footer-new.PNG)
 
-404 Error
+Error
 
-- Broken link to page.
 - Error due favicon not working.
 
   ![Error 404](assets/images/Error404.PNG)
@@ -103,11 +104,11 @@ Wireframes - Balsamiq
 
   ![Game Screen](assets/images/game-screen-mockup.PNG)
 
-  ![Game Screen](assets/images/screen3.jpeg)
+  ![Game Screen](assets/images/)
 
-  ![Game Screen](assets/images/screen4.jpeg)
+  ![Game Screen](assets/images/)
 
-  ![Game Screen](assets/images/screen5.jpeg)
+  ![Game Screen](assets/images/)
 
 ## Technologies
 
