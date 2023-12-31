@@ -26,8 +26,9 @@
         <div class="start">
             <h2>Welcome to Konnect!</h2>
             <div class="gameRules">
-                <img src="assets/images/rules.png" class="rules" alt="rules" aria-label="">
+                <img src="assets/images/rules.png" class="rules" alt="rules" aria-label="rules">
                 <ol>
+                    <li>The objective of the game is to get the correct answer before your lives run out.</li>
                     <li>Please enter your name in the textbox.</li>
                     <li>Click the Submit button.</li>
                     <li>This will bring you to the main game.</li>
@@ -40,17 +41,18 @@
                     <li>The <span id="orange">"Orange!"</span> color refers to the right letter in the wrong position
                         in the box.</li>
                     <li>The <span id="red">"Red!"</span> color refers to the letter is not part of the game.</li>
-                    <li>The game is get the correct word before your lives run out.</li>
-                    <li>You time with be show at the end of the game, if you complete the task in time.</li>
+                    <li></li>
+                    <li>When you have run out of live and your guess is wrong it will displ the end of the game, if you complete the task in time.</li>
                     <li>Good Luck!</li>
                 </ol>
         </div>
             <div class="enterGame">
                 <h2 id="fname">Enter your name:
-                <input type="text" name="username" id="username"> 
+                <input type="text" name="username" id="username" aria-label="Username"> 
+                <button type="submit" id="enterButton">SUBMIT</button>
                 </h2>
             </div>
-                <button data="submit" id="enterButton" >SUBMIT</button>
+                
         </div>
 
         <!--Game Screen code below -->
@@ -58,7 +60,7 @@
         <div class="main">
             <form class="icons">
                 <input id="homeBtn" onclick="location.reload" type="image" alt="homeBtn" src="assets/images/home-btn.png">
-                <input id="resetBtn" onclick="restartGame()" type="image" alt="resetBtn" src="assets/images/play-again.png">
+                <input id="resetBtn" onclick="clearInput()" type="image" alt="resetBtn" src="assets/images/play-again.png">
             </form>
             <div class="layout">
                 <div class="box" style="text-align:center"> </div>
@@ -79,8 +81,8 @@
 
             <h2 id="enter">Enter your guess below:</h2> 
             <div class="box1">
-                <input class="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)">
-                <button class="ansBtn" type="submit" id="ansBtn" >SUBMIT</button>
+                <input id ="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)" aria-label="Enter guess">
+                <button type="submit" id="ansBtn" >SUBMIT</button>
             </div>
         </div>
     </main>

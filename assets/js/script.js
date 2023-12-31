@@ -5,9 +5,8 @@ let lives = 5;
 let fname = localStorage.getItem("username", name);
 
 document.getElementById('enterButton').addEventListener("click", validateInput);
-document.getElementById('ansButton').addEventListener("click", getWord);
-document.getElementById('ansButton').addEventListener("click", game);
-document.getElementById('ansButton').addEventListener("click", clearInput);
+document.getElementById('ansBtn').addEventListener("click", game);
+document.getElementById('ansBtn').addEventListener("click", clearInput);
 
 // Split the index html page into two different pages - Introdution and Game Screens
 function enterGame() {
@@ -22,13 +21,11 @@ function enterGame() {
     }
 }
 
+// Validate Username
 function validateInput() {
- let name = document.getElementById("username").value.trim();
-//    let text;
+    let name = document.getElementById("username").value.trim();
     if (name.length < 3) {
           alert("Name must more than 3 or more chars");
-//        text = "Name must more than 3 or more chars";
-//        document.getElementById("error").innerHTML - text;
     } else {
         enterGame();
         storeInfo();
@@ -40,14 +37,6 @@ function storeInfo() {
     let name = document.getElementById("username").value;
     //Store Data Locally
     let fname = localStorage.setItem("username", name);
-}
-
-//Gets both words to be compared
-function getWord() {
-    //Setting an Array of Words
-    let array = [];
-    //Input guess from user
-    let guess = document.getElementsByClassName('enterBox').value.toLowerCase();
 }
 
 //Setting an Array of Words
@@ -105,8 +94,8 @@ function decreaseLives() {
     document.getElementById('cdn').innerHTML = lives;
 
     if (lives == 0) {
-        //document.getElementById('ansBtn').disabled = true;
-        document.getElementById('result').innerHTML = 'Game over. The word was ${word}';
+        document.getElementById('ansBtn').disabled = true;
+        document.getElementById('result').innerHTML = `Game over. The answer is ${word}`;
     } else {
         document.getElementById('ansBtn').disabled = false;
         return;
