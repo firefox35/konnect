@@ -75,8 +75,8 @@ Error
   
 - By adding both the piece of code below and favicon generator it removed the error.
   
-- link rel="shortcut icon" href="#"
--
+  - link rel="shortcut icon" href="#"
+
 - The links below
   - <https://stackoverflow.com/questions/39149846/why-am-i-seeing-a-404-not-found-error-failed-to-load-favicon-ico-when-not-usin>
   - <https://favicon.io/favicon-generator/>
