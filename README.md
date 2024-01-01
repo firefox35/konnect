@@ -188,21 +188,14 @@ Responsiveness
 
 Responsiveness was tested on screen sizes from 320px on Chrome, Edge, Firefox and Opera browsers.
 
-Steps to test:
+|                                 Steps to test:                                  |          Expected        | Result |
+|------------------------------------------------------------------------|--------|
+| 1. Open browser and navigate to [Konnect](https://firefox35.github.io/konnect/).| No issues with regards to overlapping, images and links. | &check;|
+| 2. Open the developer tools (right click and inspect).                          |                          |        |
+| 3. Set to responsive and decrease width to 320px.                               |                          |        |
+| 4. Set the zoom to 50%.                                                         |                          |        |
+| 5. Click and drag the responsive window to maximum width.                       |                          |        |
 
-1. Open browser and navigate to [Konnect](https://firefox35.github.io/konnect/)
-2. Open the developer tools (right click and inspect)
-3. Set to responsive and decrease width to 320px
-4. Set the zoom to 50%
-5. Click and drag the responsive window to maximum width
-
-Expected:
-
-No issues regards with overlapping, images and links
-
-Result:
-
-No issue to report.
 
 Accessibility
 
