@@ -37,7 +37,8 @@
                     <li>Click the Submit button.</li>
                     <li>This will bring you to the main game.</li>
                     <li>Please enter your 5 letter word guess in the textbox and then click the submit button.</li>
-                    <li>Each time you enter a word your lives will decrease, till either you run out of guesses or you get it correct.</li>
+                    <li>Each time you enter a word your lives will decrease, till either you run out of guesses or you
+                        get it correct.</li>
                     <li>You have five attempts before the game is over.</li>
                     <li>Once you have entered your word, it then compares your word against the correct answer.</li>
                     <li>It will then return 3 different response colours.</li>
@@ -45,27 +46,32 @@
                     <li>The <span id="orange">"Orange!"</span> colour refers to the right letter in the wrong position
                         in the box.</li>
                     <li>The <span id="red">"Red!"</span> colour refers to the letter is not part of the game.</li>
-                    <li>If you have guessed the word correctly it will display all the letters green and your name as a winner.</li>
-                    <li>If you have run out of lives and your guess is wrong it will display the correct answer to the game.</li>
-                    <li>You can end the game by clicking the home or the play again button both will bring you back to the introduction screen.</li>
+                    <li>If you have guessed the word correctly it will display all the letters green and your name as a
+                        winner.</li>
+                    <li>If you have run out of lives and your guess is wrong it will display the correct answer to the
+                        game.</li>
+                    <li>You can end the game by clicking the home or the play again button both will bring you back to
+                        the introduction screen.</li>
                     <li>Good Luck!</li>
                 </ol>
-        </div>
+            </div>
             <div class="enterGame">
                 <h2 id="fname">Enter your name:
-                <input type="text" name="username" id="username" aria-label="Username"> 
-                <button type="submit" id="enterButton">SUBMIT</button>
+                    <input type="text" name="username" id="username" aria-label="Username">
+                    <button type="submit" id="enterButton">SUBMIT</button>
                 </h2>
             </div>
-                
+
         </div>
 
         <!--Game Screen code below -->
-        
+
         <div class="main">
             <form class="icons">
-                <input id="homeBtn" type="image" alt="homeBtn" src="assets/images/home-btn.png" aria-label="home button">
-                <input id="resetBtn"  type="image" alt="resetBtn" src="assets/images/play-again.png" aria-label="game reset button">
+                <input id="homeBtn" type="image" alt="homeBtn" src="assets/images/home-btn.png"
+                    aria-label="home button">
+                <input id="resetBtn" type="image" alt="resetBtn" src="assets/images/play-again.png"
+                    aria-label="game reset button">
             </form>
             <div class="layout">
                 <div class="box" style="text-align:center"> </div>
@@ -74,7 +80,7 @@
                 <div class="box" style="text-align:center"> </div>
                 <div class="box" style="text-align:center"> </div>
             </div>
-            
+
             <div>
                 <div class="timer">
                     <label>LIVES:
@@ -84,15 +90,15 @@
                 </div>
             </div>
 
-            <h2 id="enter">Enter your guess below:</h2> 
+            <h2 id="enter">Enter your guess below:</h2>
             <div class="box1">
-                <input id ="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)" aria-label="Enter guess">
+                <input id="enterBox" type="text" maxlength="5" onkeypress="stringOnly(event)" aria-label="Enter guess">
                 <button type="submit" id="ansBtn">SUBMIT</button>
             </div>
         </div>
     </main>
     <footer>
-    <!--A link to Facebook-->
+        <!--A link to Facebook-->
         <a href="https://www.facebook.com" class="a" target="_blank" rel="noopener">Visit us on Facebook</a>
     </footer>
     <!--JavaScript Link-->

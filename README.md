@@ -30,7 +30,7 @@ Konnect is a word game where the computer selects a random word and you have to 
 The Rules of Game Screen
 ![Konnect](assets/images/game-rules.PNG)
 
-## How the Game is played.
+## How the Game is played
 
 - The user has enter a word as shown below with 4 reds and 1 yellow.
 - This means the reds are wrong and the one yellow is in the wrong position but part of the word.
@@ -42,7 +42,7 @@ The Rules of Game Screen
 
 ![Konnect](assets/images/game-words3.PNG)
 
-- The user has run out of lives and has the wrong answer as shown below. 
+- The user has run out of lives and has the wrong answer as shown below.
 - Game Over - Try Again
 
 ![Konnect](assets/images/game-wrong-answer.PNG)
@@ -71,7 +71,15 @@ Footer
 Error
 
 - Error due favicon not working.
-
+  ![Konnect](assets/images/favicon%20error.PNG.PNG)
+  
+- By adding both the piece of code below and favicon generator it removed the error.
+  
+- <link rel="shortcut icon" href="#">
+-
+- The links below
+  - <https://stackoverflow.com/questions/39149846/why-am-i-seeing-a-404-not-found-error-failed-to-load-favicon-ico-when-not-usin>
+  - <https://favicon.io/favicon-generator/>
 
 ### About Screen
 
@@ -120,7 +128,6 @@ Wireframes - Balsamiq
 - Main Game Screen
 
   ![Game Screen](assets/images/game-screen-mockup.PNG)
-
 
 ## Technologies
 
@@ -262,7 +269,6 @@ Konnect Screens
 |                             | 5. Click Ok.                         |                           |        |
 |                             | 2. Re-enter a correct username.      |                           |        |
 
-
 #### TEST 4 - [Konnect](https://firefox35.github.io/konnect/)
 
 |          Description        |            Steps                             |          Expected        | Result |
@@ -353,8 +359,6 @@ Konnect Screens
 | Play Again Button on Game Screen | 1. In the Game Screen.                  |Restart the game again    | &cross;|
 |                             | 2. Click on the Play Again Button.           |                          |        |
 
-
-
 ## Header Icons/Links
 
 - Logo Image
@@ -372,7 +376,6 @@ Konnect Screens
 - Home Icon Image
 
   - <https://icons8.com/icons/set/home-button>
-
 
 Validation Testing
 
@@ -439,7 +442,6 @@ Credits
 
   - Home Icon Image
     - <https://icons8.com/icons/set/home-button>
-
 
 - Learning Material
 
